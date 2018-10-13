@@ -1,10 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.9.15)  15 SEP 2018 03:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2018.9.15)  15 SEP 2018 20:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**\PassOptionsToClass{tikzexport}{ximera}\PassOptionsToClass{xake}{ximera}\Pass
-OptionsToClass{xake}{xourse}\nonstopmode\input{howToUseXimera.tex}
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode ximera,charset=utf-8,-css.a
+.b.c.\input  howToUseXimera.tex
 (./howToUseXimera.tex (/home/emi/texmf/tex/latex/ximeraLatex/ximera.cls
 Document Class: ximera 2018/10/17 v1.00 Simultaneously write print and online i
 nteractive materials
@@ -79,18 +84,10 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count88
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
@@ -106,9 +103,8 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks18
 \minrowclearance=\skip51
 )
-\rownum=\count89
+\rownum=\count88
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -151,7 +147,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 )
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -177,21 +173,22 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yc=\dimen121
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count90
-\c@pgf@countb=\count91
-\c@pgf@countc=\count92
-\c@pgf@countd=\count93
+\c@pgf@counta=\count89
+\c@pgf@countb=\count90
+\c@pgf@countc=\count91
+\c@pgf@countd=\count92
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Package pgfsys Info: Driver file for pgf: pgfsys-dvips.def on input line 900.
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-dvips.def
+File: pgfsys-dvips.def 2008/04/03  (rcs-revision 1.20)
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
+File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
+\pgf@objectcount=\count93
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
@@ -445,7 +442,7 @@ fshading.code.tex
 \c@pgfplotslibrarysurf@no=\count116
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-pdftex.def)))
+shading.pgfsys-dvips.def)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
 tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
@@ -695,9 +692,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
@@ -738,31 +741,23 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 )
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-)))
+Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
+
+))
 (/usr/share/texmf/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.cod
 e.tex
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshar
 ed.code.tex
 \tikzexternal@outfile=\write6
-))
-\openout3 = `howToUseXimera.auxlock'.
-
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -817,7 +812,6 @@ File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4319.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
@@ -832,6 +826,7 @@ LaTeX Info: Redefining \url on input line 5041.
 \Fld@menulength=\count157
 \Field@Width=\dimen189
 \Fld@charsize=\dimen190
+\Field@toks=\toks53
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -842,149 +837,815 @@ Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
 \Hy@abspage=\count158
-\c@Item=\count159
-\c@Hfootnote=\count160
+
+
+Package hyperref Message: Stopped early.
+
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver: htex4ht.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count161
-\c@bookmark@seq@number=\count162
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2012/11/06 v6.83m Hyperref driver for TeX4ht
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+(/usr/share/texmf/tex/generic/tex4ht/tex4ht.sty
+version 2008-10-27-17:23
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks54
+))
+\c@theorem=\count159
+\c@algorithm=\count160
+\c@axiom=\count161
+\c@claim=\count162
+\c@conclusion=\count163
+\c@condition=\count164
+\c@conjecture=\count165
+\c@corollary=\count166
+\c@criterion=\count167
+\c@definition=\count168
+\c@example=\count169
+\c@fact=\count170
+\c@lemma=\count171
+\c@formula=\count172
+\c@idea=\count173
+\c@notation=\count174
+\c@model=\count175
+\c@observation=\count176
+\c@proposition=\count177
+\c@paradox=\count178
+\c@procedure=\count179
+\c@remark=\count180
+\c@summary=\count181
+\c@template=\count182
+\c@warning=\count183
+\c@Iteration@probCnt=\count184
+\c@problem=\count185
+\c@problem@Depth=\count186
+\c@hintLevel=\count187
+\c@titlenumber=\count188
+\c@sectiontitlenumber=\count189
+
+(/usr/share/texmf/tex/generic/tex4ht/usepackage.4ht
+version 2009-05-21-09:32
 )
-\Hy@SectionHShift=\skip61
-)
-\outcomefile=\write7
-\openout7 = `howToUseXimera.oc'.
-
-\c@theorem=\count163
-\c@algorithm=\count164
-\c@axiom=\count165
-\c@claim=\count166
-\c@conclusion=\count167
-\c@condition=\count168
-\c@conjecture=\count169
-\c@corollary=\count170
-\c@criterion=\count171
-\c@definition=\count172
-\c@example=\count173
-\c@fact=\count174
-\c@lemma=\count175
-\c@formula=\count176
-\c@idea=\count177
-\c@notation=\count178
-\c@model=\count179
-\c@observation=\count180
-\c@proposition=\count181
-\c@paradox=\count182
-\c@procedure=\count183
-\c@remark=\count184
-\c@summary=\count185
-\c@template=\count186
-\c@warning=\count187
-\c@Iteration@probCnt=\count188
-\c@problem=\count189
-\c@problem@Depth=\count190
-\c@hintLevel=\count191
-\c@titlenumber=\count192
-\c@sectiontitlenumber=\count193
-\idfile=\write8
-\openout8 = `howToUseXimera.ids'.
-
-
 (/home/emi/texmf/tex/latex/SageMath/local/share/texmf/tex/latex/sagetex/sagetex
 .sty
 Package: sagetex 2015/08/26 v3.0-92d9f7a embedding Sage into LaTeX documents
  (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks53
-\verbatim@line=\toks54
+\every@verbatim=\toks55
+\verbatim@line=\toks56
 \verbatim@in@stream=\read3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
 )
-\c@ST@inline=\count194
-\c@ST@plot=\count195
-\c@ST@cmdline=\count196
-\sagetexindent=\skip62
+\c@ST@inline=\count190
+\c@ST@plot=\count191
+\c@ST@cmdline=\count192
+\sagetexindent=\skip61
 
 No file howToUseXimera.sagetex.sout.
-\sagecommandlineskip=\skip63
-)
-\myfile=\write9
-\openout9 = `howToUseXimera.jax'.
+\sagecommandlineskip=\skip62
+)) (/home/emi/texmf/tex/latex/ximeraLatex/ximera.cfg
+(/usr/share/texmf/tex/generic/tex4ht/tex4ht.4ht
+version 2009-01-07-07:11
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
 
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/share/texmf/tex/generic/tex4ht/tex4ht.sty
+version 2008-10-27-17:23
+
+--- needs --- tex4ht howToUseXimera ---
+\tmp:cnt=\count193
+\openout15 = `howToUseXimera.tmp'.
+
+(./howToUseXimera.tmp)
+\tmp:dim=\skip63
+ (./howToUseXimera.xref)
+\:refout=\write7
+\openout7 = `howToUseXimera.xref'.
+
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
 )
-No file howToUseXimera.aux.
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: charset=utf-8,-css,html,htex4ht,xhtml
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+\:tokwrite=\toks57
+\:tokpage=\toks58
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `howToUseXimera.4ct'.
+
+\:tocout=\write8
+\openout8 = `howToUseXimera.4tc'.
+
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/latex.4ht
+version 2009-05-21-09:32
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texmf/tex/generic/tex4ht/fontmath.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/array.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texmf/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/colortbl.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks59
+\MT@count=\count194
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen191
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count195
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip64
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:51: LaTeX Error: Environment h
+tml undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \Configure
+               {@HEAD}{\HCode{<meta name="author" content="}\@author\HCode{"...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:51: LaTeX Error: \env@html@sav
+e@env undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \Configure
+               {@HEAD}{\HCode{<meta name="author" content="}\@author\HCode{"...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:51: LaTeX Error: \env@html@pro
+cess undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \Configure
+               {@HEAD}{\HCode{<meta name="author" content="}\@author\HCode{"...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@identification=\count196
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:69: LaTeX Error: Environment x
+armaBoost undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...figureQuestionEnv{xarmaBoost}{xarma-boost}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:71: LaTeX Error: Environment s
+huffle undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \ConfigureQuestionEnv{shuffle}{shuffle}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@imagealt=\count197
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:140: LaTeX Error: Command \pgf
+syspdfmark already defined.
+               Or name \end... illegal, see p.192 of the manual in `ximera.cfg'
+.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \newcommand{\pgfsyspdfmark}[3]{}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@choiceId=\count198
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:234: Illegal parameter number 
+in definition of \desmos.
+<to be read again> 
+                   c
+l.234 ...not support embedded elements.</iframe>}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.4ht:272: Too many }'s.
+l.272 }
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/article.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/enumitem.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/titlesec.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/xcolor.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/pgf.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/everyshi.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/graphicx.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/graphics.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/fancyvrb.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/ifthen.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsmath.4ht
+version 2009-05-21-09:32
+\tmp:muskip=\muskip12
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsthm.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/listings.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- to ensure proper alignments use fixed size fonts (see listings.dtx
+)
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/nameref.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/hyperref.4ht
+version 2009-05-21-09:32
+LaTeX Info: Redefining \autoref on input line 99.
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/verbatim.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+runsystem(sed -i "/@/d" howToUseXimera.jax)...executed.
+
+runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" howToUseXimera.jax)...executed.
+
+\eqtoks=\toks60
+
+/home/emi/texmf/tex/latex/ximeraLatex/ximera.cfg:125: Extra \fi.
+l.125   \fi
+           
+I'm ignoring this; it doesn't match any \if.
+
+(./howToUseXimera.oc) (./howToUseXimera.aux)
 \openout1 = `howToUseXimera.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count197
-\scratchdimen=\dimen191
-\scratchbox=\box46
-\nofMPsegments=\count198
-\nofMParguments=\count199
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count200
-\MPscratchDim=\dimen192
-\MPnumerator=\count201
-\makeMPintoPDFobject=\count202
-\everyMPtoPDFconversion=\toks56
-) ABD: EveryShipout initializing macros
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 5.
+ on input line 158.
 
-\c@lstlisting=\count203
-\AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 5.
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
-\@outlinefile=\write10
-\openout10 = `howToUseXimera.out'.
+\c@lstlisting=\count199
+\AtBeginShipoutBox=\box46
+Package hyperref Info: Link coloring ON on input line 158.
+LaTeX Info: Redefining \ref on input line 158.
+LaTeX Info: Redefining \pageref on input line 158.
+LaTeX Info: Redefining \nameref on input line 158.
+\ST@sf=\write9
+\openout9 = `howToUseXimera.sagetex.sage'.
 
-\ST@sf=\write11
-\openout11 = `howToUseXimera.sagetex.sage'.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+LaTeX Info: Redefining \microtypecontext on input line 158.
+Package microtype Info: Generating DVI output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No font expansion.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
 
 LaTeX Warning: No \author given.
 
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
 
-LaTeX Font Warning: Font shape `OT1/cmtt/bx/sl' undefined
-(Font)              using `OT1/cmtt/bx/n' instead on input line 29.
+./howToUseXimera.tex:6: LaTeX Error: Environment abstract undefined.
 
-LaTeX Font I
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{abstract}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./howToUseXimera.tex:8: LaTeX Error: \begin{document} ended by \end{abstract}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{abstract}
+                  \maketitle
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
+
+] [2]
+*********************************************************************
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+ (./howToUseXimera.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+ ) 
+Here is how much of TeX's memory you used:
+ 30562 strings out of 493305
+ 617053 string characters out of 6139897
+ 918495 words of memory out of 5000000
+ 33240 multiletter control sequences out of 15000+600000
+ 5841 words of font info for 25 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 63i,6n,76p,1227b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on howToUseXimera.dvi (3 pages, 18488 bytes).
