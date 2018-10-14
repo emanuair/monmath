@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head> <title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="continuityFromGraph1.tex"/> 
+<meta name="date" content="2018-09-28 21:35:00"/> 
+<meta name="author" content="Nela  Lakos  and  Kyle
+                                                                  
+
+                                                                  
+Parsons"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Identify where a function is, and is not, continuous."/> 
+<meta name="learning-outcome" content="Understand the connection between continuity of a function and the value of a limit."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="2b48def68f195318532d85dbba5e415dd6521509 whatIsALimit/exercises/continuityFromGraph1.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div role="article" class="problem-environment exercise" id="problem1"><a id="x1-64r1"></a>
+Consider the function <script type="math/tex">f</script>, given by the graph below.
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">y=f(x)</script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+<!--l. 45--><p class="noindent"><script type="math/tex">f</script> is <span class="word-choice" id="word-choice2"><a id="x1-65r2"></a><span class="choice  " id="choice1">continuous</span><span class="choice correct " id="choice2">not continuous</span>
+</span> at <script type="math/tex">a=0</script> because: </p><div class="multiple-choice" id="problem3"><span class="choice  " id="choice3"><script type="math/tex">\lim _{x\to a}f(x) = f(a)</script></span> <span class="choice correct " id="choice4"><script type="math/tex">\lim _{x\to a}f(x)</script> does not exist</span> <span class="choice  " id="choice5"><script type="math/tex">x=a</script> is not in the domain of <script type="math/tex">f</script></span> <span class="choice  " id="choice6"><script type="math/tex">\lim _{x\to a}f(x)</script> exists but is not <script type="math/tex">f(a)</script></span> </div>
+<!--l. 53--><p class="noindent"><script type="math/tex">f</script> is <span class="word-choice" id="word-choice4"><a id="x1-66r3"></a><span class="choice  " id="choice7">continuous</span><span class="choice correct " id="choice8">not continuous</span>
+</span> at <script type="math/tex">a=3</script> because: </p><div class="multiple-choice" id="problem5"><span class="choice  " id="choice9"><script type="math/tex">\lim _{x\to a}f(x) = f(a)</script></span> <span class="choice  " id="choice10"><script type="math/tex">\lim _{x\to a}f(x)</script> does not exist</span> <span class="choice correct " id="choice11"><script type="math/tex">x=a</script> is not in the domain of <script type="math/tex">f</script></span> <span class="choice  " id="choice12"><script type="math/tex">\lim _{x\to a}f(x)</script> exists but is not <script type="math/tex">f(a)</script></span> </div>
+<!--l. 61--><p class="noindent"><script type="math/tex">f</script> is <span class="word-choice" id="word-choice6"><a id="x1-67r4"></a><span class="choice correct " id="choice13">continuous</span><span class="choice  " id="choice14">not continuous</span>
+</span> at <script type="math/tex">a=5</script> because: </p><div class="multiple-choice" id="problem7"><span class="choice correct " id="choice15"><script type="math/tex">\lim _{x\to a}f(x) = f(a)</script></span> <span class="choice  " id="choice16"><script type="math/tex">\lim _{x\to a}f(x)</script> does not exist</span> <span class="choice  " id="choice17"><script type="math/tex">x=a</script> is not in the domain of <script type="math/tex">f</script></span> <span class="choice  " id="choice18"><script type="math/tex">\lim _{x\to a}f(x)</script> exists but is not <script type="math/tex">f(a)</script></span> </div>
+<!--l. 69--><p class="noindent"><script type="math/tex">f</script> is <span class="word-choice" id="word-choice8"><a id="x1-68r5"></a><span class="choice  " id="choice19">continuous</span><span class="choice correct " id="choice20">not continuous</span>
+</span> at <script type="math/tex">a=6</script> because: </p><div class="multiple-choice" id="problem9"><span class="choice  " id="choice21"><script type="math/tex">\lim _{x\to a}f(x) = f(a)</script></span> <span class="choice  " id="choice22"><script type="math/tex">\lim _{x\to a}f(x)</script> does not exist</span> <span class="choice  " id="choice23"><script type="math/tex">x=a</script> is not in the domain of <script type="math/tex">f</script></span> <span class="choice correct " id="choice24"><script type="math/tex">\lim _{x\to a}f(x)</script> exists but is not <script type="math/tex">f(a)</script></span> </div>
+<!--l. 77--><p class="noindent"><script type="math/tex">f</script> is <span class="word-choice" id="word-choice10"><a id="x1-69r6"></a><span class="choice  " id="choice25">right continuous</span><span class="choice correct " id="choice26">left continuous</span>
+</span> at <script type="math/tex">a=0</script> because: </p><div class="multiple-choice" id="problem11"><span class="choice  " id="choice27"><script type="math/tex">\lim _{x\to a^{+}}f(x) = f(a)</script></span> <span class="choice correct " id="choice28"><script type="math/tex">\lim _{x\to a^{-}}f(x)=f(a)</script></span> <span class="choice  " id="choice29"><script type="math/tex">\lim _{x\to a}f(x)</script> does not exist</span> <span class="choice  " id="choice30"><script type="math/tex">x=a</script> is in the domain of <script type="math/tex">f</script></span>
+</div>
+</div>  
+ 
+
+                                                                  
+
+
+</body></html>

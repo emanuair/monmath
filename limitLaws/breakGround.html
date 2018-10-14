@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head> <title>Equal  or
+                                                                  
+
+                                                                  
+not?</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="breakGround.tex"/> 
+<meta name="date" content="2018-09-28 21:31:00"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content=""/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="c7138c979d3514c013a6394c485181a92d3fccad limitLaws/breakGround.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\descriptionlabel }[1]{\hspace {\labelsep }\textbf {#1:}}                  </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div class="abstract">
+<!--l. 12--><p class="noindent">Here we see a dialogue where students discuss combining limits with arithmetic.
+</p></div>   <div class="maketitle"></div>
+Check out this dialogue between two calculus students (based on a true
+story):
+     <dl class="dialogue"><dt class="actor">
+Devyn </dt><dd class="speech">Riley, I’ve been thinking about limits.
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">So awesome!
+     </dd><dt class="actor">
+Devyn </dt><dd class="speech">Think about <script type="math/tex; mode=display"> \lim _{x\to a} \left (f(x) + g(x)\right ). </script> This is the number that <script type="math/tex">f(x) + g(x)</script> gets nearer and nearer to, as <script type="math/tex">x</script>
+     gets nearer and nearer to <script type="math/tex">a</script>.
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">You know it!
+     </dd><dt class="actor">
+Devyn </dt><dd class="speech">So I think it is the same as <script type="math/tex; mode=display"> \lim _{x\to a} f(x) + \lim _{x\to a}g(x). </script>
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">Yeah, that does make sense, since when you add two numbers, say <script type="math/tex; mode=display"> (\text {a number near $6$}) + (\text {a number near $7$}) </script> you
+     get <script type="math/tex; mode=display"> (\text {a number near $13$}) </script>
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">Right! And I think the same reasoning will work for multiplication! So
+     we should be able to say <script type="math/tex; mode=display"> \lim _{x\to a}\left (f(x) \cdot g(x)\right ) = \left (\lim _{x\to a} f(x) \right )\cdot \left (\lim _{x\to a} g(x)\right ). </script>
+     </dd><dt class="actor">
+Devyn </dt><dd class="speech">Yes, I think that’s right! But what about <em>division</em>? Can we use similar
+     reasoning to conclude <script type="math/tex; mode=display"> \lim _{x\to a} \frac {f(x)}{g(x)} = \frac {\lim _{x\to a} f(x)}{\lim _{x\to a} g(x)}. </script></dd></dl>
+<div role="article" class="problem-environment problem" id="problem1"><a id="x1-65r1"></a> Give an argument (similar to the one above) supporting the idea that <script type="math/tex; mode=display"> \lim _{x\to a}\left (f(x) \cdot g(x)\right ) = \left (\lim _{x\to a} f(x) \right )\cdot \left (\lim _{x\to a} g(x)\right ). </script>
+<div class="free-response" id="problem2"><a id="x1-66r2"></a>
+</div>
+</div>
+<!--l. 68--><p class="noindent">For the next problems, suppose <script type="math/tex">L</script> is a number near <script type="math/tex">1</script> and that <script type="math/tex">M</script> is a number near
+<script type="math/tex">0</script>.
+</p>
+<div role="article" class="problem-environment problem" id="problem3"><a id="x1-67r3"></a> Using the context above, <script type="math/tex; mode=display"> \frac {\text {large}}{\text {small}} = ? </script> <div class="multiple-choice" id="problem4"><span class="choice correct " id="choice1">“large”</span> <span class="choice  " id="choice2">“small”</span> <span class="choice  " id="choice3">impossible to say</span> </div>
+</div>
+<div role="article" class="problem-environment problem" id="problem5"><a id="x1-68r4"></a> Using the context above, <script type="math/tex; mode=display"> \frac {\text {small}}{\text {small}} = ? </script> <div class="multiple-choice" id="problem6"><span class="choice  " id="choice4">“large”</span> <span class="choice  " id="choice5">“small”</span> <span class="choice correct " id="choice6">impossible to say</span> </div>
+</div>
+                                                                  
+
+                                                                  
+ 
+ 
+
+                                                                  
+
+
+</body></html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en"><head> <title>Limits  of  the  form  zero  over
+                                                                  
+
+                                                                  
+zero</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="digInLimitsOfTheFormZeroOverZero.tex"/> 
+<meta name="date" content="2018-09-15 20:00:00"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand what is meant by the form of a limit."/> 
+<meta name="learning-outcome" content="Calculate limits of the form zero over zero."/> 
+<meta name="learning-outcome" content="Identify determinate and indeterminate forms."/> 
+<meta name="learning-outcome" content="Distinguish between determinate and indeterminate forms."/> 
+<meta name="learning-outcome" content="Discuss why infinity is not a number."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="afb88042c7c96307b3d77d3d3eb95fa196c16476 indeterminateForms/digInLimitsOfTheFormZeroOverZero.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div class="abstract">
+<!--l. 15--><p class="noindent">We want to evaluate limits for which the Limit Laws do not apply.
+</p></div>
+<div class="maketitle"></div>
+<!--l. 20--><p class="noindent">In the last section we computed limits using continuity and the limit laws. What
+about limits that cannot be directly computed using these methods? Consider the
+following limit, <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2-3x+2}{x-2}. </script> Here <script type="math/tex; mode=display"> \lim _{x\to 2}\left (x^2-3x+2\right ) = 0\qquad \text {and}\qquad \lim _{x\to 2}\left (x-2\right ) = 0 </script> in light of this, you may think that the limit is one or zero.
+<strong>Not so fast</strong>. This limit is of an <em>indeterminate form</em>. What does this mean? Read on,
+young mathematician.
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a id="x1-64r1"></a>A limit <script type="math/tex; mode=display"> \lim _{x\to a} \frac {f(x)}{g(x)} </script> is said to be of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> if <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = 0\quad \text {and}\quad \lim _{x\to a} g(x) =0. </script>
+</div>
+<div role="article" class="problem-environment question" id="problem2"><a id="x1-65r2"></a> Which of the following limits are of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>? <div class="select-all" id="problem3"><a id="x1-66r3"></a> <span class="choice correct " id="choice1"><script type="math/tex">\lim _{x\to 0}\frac {\sin (x)}{x}</script></span> <span class="choice  " id="choice2"><script type="math/tex">\lim _{x\to 0}\frac {\cos (x)}{x}</script></span> <span class="choice  " id="choice3"><script type="math/tex">\lim _{x\to 0}\frac {x^2-3x+2}{x-2}</script></span> <span class="choice correct " id="choice4"><script type="math/tex">\lim _{x\to 2}\frac {x^2-3x+2}{x-2}</script></span> <span class="choice  " id="choice5"><script type="math/tex">\lim _{x\to 3}\frac {x^2-3x+2}{x-3}</script></span>
+</div>
+</div>
+<div class="theorem-like problem-environment warning" id="problem4"><a id="x1-67r4"></a>The symbol <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> is <strong>not</strong> the number <script type="math/tex">0</script> divided by <script type="math/tex">0</script>. It is simply short-hand and means that
+a limit <script type="math/tex">\lim _{x\to a} \frac {f(x)}{g(x)}</script> has the property that <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = 0\quad \text {and}\quad \lim _{x\to a} g(x) =0. </script>
+</div>
+<!--l. 67--><p class="noindent">Let’s finish the example with the function above.
+</p>
+<div class="theorem-like problem-environment example" id="problem5"><a id="x1-68r5"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2-3x+2}{x-2} </script> <div class="theorem-like problem-environment explanation" id="problem6"><a id="x1-69r6"></a>This limit is of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>. However, note that if we assume <script type="math/tex">x\ne 2</script>, then we can
+write <script type="math/tex; mode=display"> \frac {x^2-3x+2}{x-2} = \frac {(x-2)(\answer [given]{x-1})}{(x-2)} = \answer [given]{x-1}. </script>
+<div class="image-environment" role="img" aria-labelledby="image-alt-1">  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">y</script><script type="math/tex">y= x-1</script>
+                                                                  
+
+                                                                  
+  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">y</script><script type="math/tex">y=\frac {x^2-3x+2}{x-2}</script>
+</div>
+So, “our function” is equal to the polynomial <script type="math/tex">x-1</script> everywhere, except at <script type="math/tex">x=2</script>. Therefore, for
+all values of <script type="math/tex">x</script> near <script type="math/tex">2</script>, “our function” is equal to the polynomial <script type="math/tex">x-1</script>! This means that <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2-3x+2}{x-2} = \lim _{x\to 2} (x-1). </script> But
+now, we have to take the limit of a polynomial, <script type="math/tex">\lim _{x\to 2} (x-1) =\answer [given]{1}</script>.
+<!--l. 121--><p class="noindent">Hence <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2-3x+2}{x-2} = \answer [given]{1}. </script>
+</p></div>
+</div>
+<!--l. 129--><p class="noindent">Let’s consider a few more examples of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem7"><a id="x1-70r7"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to 1}\frac {x-1}{x^2+2x-3}. </script> <div class="theorem-like problem-environment explanation" id="problem8"><a id="x1-71r8"></a>First note that <script type="math/tex; mode=display"> \lim _{x\to 1}\left (x-1\right )=0 \quad \text {and}\quad \lim _{x\to 1}\left (x^2+2x-3\right ) = 0. </script> Hence, this limit is of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>. Again, we cannot
+apply the Quotient Law or any other Limit Law. We cannot use continuity,
+either. Namely, “our function” is not continuous at <script type="math/tex">x=1</script>, since it is not defined at
+<script type="math/tex">x=1</script>.
+<!--l. 144--><p class="noindent">What can be done? We can hope to be able to cancel a factor going to <script type="math/tex">0</script>
+out of the numerator and denominator. Since <script type="math/tex">\answer [given]{(x-1)}</script> is a factor going to <script type="math/tex">0</script> in the
+numerator, let’s see if we can factor a <script type="math/tex">\answer [given]{(x-1)}</script> out of the denominator as well.
+</p><script type="math/tex; mode=display"> \begin{align*} 
+      \lim_{x\to1}\frac{x-1}{x^2+2x-3}&=\lim_{x\to1}\frac{\cancel{x-1}}{\cancel{(x-1)}\answer[given]{(x+3)}} \\
+      &=\lim_{x\to1}\frac{1}{\answer[given]{x+3}}\\
+      &=\frac{1}{4}.
+    \end{align*}</script>
+</div>
+</div>
+<div class="theorem-like problem-environment example" id="problem9"><a id="x1-72r9"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to 1} \frac {\frac {1}{x+1}-\frac {3}{x+5}}{x-1}. </script> <div class="theorem-like problem-environment explanation" id="problem10"><a id="x1-73r10"></a>We find the form of this limit by looking at the limits of the
+numerator and denominator separately. The limit of the numerator is:
+<script type="math/tex; mode=display"> \begin{align*} 
+    \lim_{x\to 1}\left(\frac{1}{x+1}-\frac{3}{x+5}\right)&=  \lim_{x\to 1}\frac{x+5-3(x+1)}{(x+1)(x+5)}\\
+    &= \lim_{x\to 1}\frac{-2x+2}{(x+1)(x+5)}\\
+    &= \frac{0}{12}\\
+    &=0
+                                                                  
+
+                                                                  
+  \end{align*}</script>
+The limit of the denominator is: <script type="math/tex; mode=display"> \lim _{x\to 1}\left (x-1\right )=0 </script> Our limit is therefore of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> and we can probably
+factor a term going to <script type="math/tex">0</script> out of both the numerator and denominator. <script type="math/tex; mode=display"> \lim _{x\to 1} \frac {\frac {1}{x+1}-\frac {3}{x+5}}{x-1} </script> When looking
+at the denominator, we hope that this term is <script type="math/tex">(x-1)</script>. Unfortunately, it is not immediately
+obvious how to factor an <script type="math/tex">(x-1)</script> out of the numerator. So, we should first simplify the
+complex fraction by multiplying it by <script type="math/tex; mode=display"> 1 = \frac {(x+1)(x+5)}{(x+1)(x+5)} </script> this will allow us to cancel immediately
+<script type="math/tex; mode=display"> \begin{align*} 
+  \lim_{x\to 1}& \frac{\frac{1}{x+1}-\frac{3}{x+5}}{x-1}  \cdot \frac{(x+1)(x+5)}{(x+1)(x+5)} \\
+  &= \lim_{x\to 1}\frac{(x+5)-3(x+1)}{(x+1)(x+5)(x-1)}.
+\end{align*}</script>
+<!--l. 194--><p class="noindent">Now we will multiply out the numerator. Note that we do not want to multiply out
+the denominator because we already have an <script type="math/tex">(x-1)</script> factored out of the denominator and
+that was the goal. <script type="math/tex; mode=display"> \lim _{x\to 1}\frac {(x+5)-3(x+1)}{(x+1)(x+5)(x-1)} </script> </p><script type="math/tex; mode=display"> \begin{align*} 
+   &= \lim_{x\to 1}\frac{x+5-3x-3}{(x+1)(x+5)(x-1)} \\
+  &= \lim_{x\to 1}\frac{-2x+2}{(x+1)(x+5)(x-1)}\\
+  &= \lim_{x\to 1}\frac{-2\cancel{(x-1)}}{(x+1)(x+5)\cancel{(x-1)}}\\
+  &= \lim_{x\to 1}\frac{-2}{(x+1)(x+5)}.
+\end{align*}</script>
+<!--l. 207--><p class="noindent">Now, we can see that the limit of “our function” is equal to the limit of a rational
+function <script type="math/tex">\frac {-2}{(x+1)(x+5)}</script>. This rational function is continuous on its domain, and, therefore, at <script type="math/tex">x=1</script>.
+Hence </p><script type="math/tex; mode=display"> \begin{align*} 
+\lim_{x\to 1} \frac{\frac{1}{x+1}-\frac{3}{x+5}}{x-1}&=\lim_{x\to
+  1}\frac{-2}{(x+1)(x+5)}\\
+&= \frac{-2}{(1+1)(1+5)} \\
+&=\answer[given]{\frac{-1}{6}}.
+\end{align*}</script>
+</div>
+</div>
+<!--l. 217--><p class="noindent">We will look at one more example.
+</p>
+<div class="theorem-like problem-environment example" id="problem11"><a id="x1-74r11"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to -1} \frac {\sqrt {x+5}-2}{x+1}. </script>
+<div class="theorem-like problem-environment explanation" id="problem12"><a id="x1-75r12"></a>Note that <script type="math/tex; mode=display"> \lim _{x\to -1} \left (\sqrt {x+5}-2\right )=0\quad \text {and}\quad \lim _{x\to -1} \left (x+1\right ) =0. </script> Our limit is, again, of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> and we can probably factor a term going
+to <script type="math/tex">0</script> out of both the numerator and denominator. We suspect from looking at the
+denominator that this term is <script type="math/tex">(x+1)</script>. Unfortunately, it is not immediately obvious how to
+factor an <script type="math/tex">(x+1)</script> out of the numerator.
+<!--l. 236--><p class="noindent">We will use an algebraic technique called <strong>multiplying by the conjugate</strong>. This
+technique is useful when you are trying to simplify an expression that looks like <script type="math/tex; mode=display"> \sqrt {\text {something}} \pm \text {something else}. </script> It takes
+advantage of the difference of squares rule <script type="math/tex; mode=display"> a^2-b^2=(a-b)(a+b). </script> In our case, we will use <script type="math/tex">a=\sqrt {x+5}</script> and <script type="math/tex">b=2</script>. Write <script type="math/tex; mode=display"> \lim _{x\to -1} \frac {\sqrt {x+5}-2}{x+1} </script>
+</p><script type="math/tex; mode=display"> \begin{align*} 
+    &= \lim_{x\to-1} \frac{\left(\sqrt{x+5}-2\right)}{(x+1)} \cdot \frac{\left(\sqrt{x+5}+2\right)}{\left(\sqrt{x+5}+2\right)} \\
+                                                                  
+
+                                                                  
+&=\lim_{x\to-1} \frac{\answer[given]{\left(\sqrt{x+5}\right)^2-2^2}}{(x+1)\left(\sqrt{x+5}+2\right)} \\
+&=\lim_{x\to-1} \frac{x+5-4}{(x+1)\left(\sqrt{x+5}+2\right)} \\
+&=\lim_{x\to-1} \frac{\cancel{(x+1)}}{\cancel{(x+1)}\left(\sqrt{x+5}+2\right)} \\
+&=\lim_{x\to-1} \frac{1}{\sqrt{x+5}+2}\\
+&= \frac{1}{\sqrt{-1+5}+2}\\
+&=\answer[given]{\frac{1}{4}}.
+\end{align*}</script>
+</div>
+</div>
+<!--l. 262--><p class="noindent">All of the examples in this section are limits of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>. When you come across a
+limit of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>, you should try to use algebraic techniques to come up with a
+continuous function whose limit you can evaluate.
+</p><!--l. 267--><p class="noindent">Notice that we solved multiple examples of limits of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> and we got
+different answers each time. This tells us that just knowing that the form of
+the limit is <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> is not enough to compute the limit. The moral of the story is
+</p>
+<div class="center">
+<!--l. 271--><p class="noindent">
+</p><!--l. 272--><p class="noindent"><strong>Limits of the form <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script> can take any value.</strong></p></div>
+<div class="theorem-like problem-environment definition" id="problem13"><a id="x1-76r13"></a>A form that gives us no information about whether the limit exists or not, and if the
+limit exists, no information about the value of the limit, is called an <strong>indeterminate
+form</strong>.
+<!--l. 279--><p class="noindent">A form that gives information about whether the limit exists or not, and if it exists
+gives information about the value of the limit, is called a <strong>determinate
+form</strong>.
+</p></div>
+<!--l. 283--><p class="noindent">Finally, you may find it distressing that we introduced a form, namely <script type="math/tex">\relax \boldsymbol {\tfrac {0}{0}}</script>,
+only to end up saying they give no information on the value of the limit.
+But this is precisely what makes indeterminate forms interesting… they’re a
+mystery!
+ 
+ 
+
+                                                                  
+
+
+</p></body></html>

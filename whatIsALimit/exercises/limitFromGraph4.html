@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head> <title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="limitFromGraph4.tex"/> 
+<meta name="date" content="2018-09-28 21:35:00"/> 
+<meta name="author" content="Nela  Lakos  and  Kyle
+                                                                  
+
+                                                                  
+Parsons"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Consider values of a function at inputs approaching a given point."/> 
+<meta name="learning-outcome" content="Understand the concept of a limit."/> 
+<meta name="learning-outcome" content="Calculate limits from a graph (or state that the limit does not exist)."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="32339a54d218325f1eadd5e25b992144f0567889 whatIsALimit/exercises/limitFromGraph4.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div role="article" class="problem-environment exercise" id="problem1"><a id="x1-64r1"></a>
+The entire graph of a function <script type="math/tex">f</script> is given below.
+<div class="image-environment" role="img" aria-labelledby="image-alt-1"><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">y=f(x)</script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+<!--l. 45--><p class="noindent">The slope of line at the point <script type="math/tex">\left (4,-2\right )</script> is <script type="math/tex">\answer {-1}</script>.<br class="newline"/>
+</p><!--l. 47--><p class="noindent">Find the following limits, if they exist. If a limit does not exist, explain
+why.
+</p><!--l. 51--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to 2^+}f(x) = \answer {0} </script> </p><div class="multiple-choice" id="problem2"><span class="choice correct " id="choice1">The limit does exist.</span> <span class="choice  " id="choice2">The limit does not exist because <script type="math/tex">f</script> is not defined the
+same to the left and right of 2.</span> <span class="choice  " id="choice3">The limit does not exist because <script type="math/tex">f(2)</script> is very
+different from the values of <script type="math/tex">f</script> near 2.</span> <span class="choice  " id="choice4">The limit does not exist because <script type="math/tex">\lim _{x\to 2^-}f(x) \neq \lim _{x\to 2^+}f(x)</script>.</span> </div>
+<!--l. 59--><p class="noindent">__________________________________________________________________
+</p><!--l. 63--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to 2^-}f(x) = \answer {2} </script> </p><div class="multiple-choice" id="problem3"><span class="choice correct " id="choice5">The limit does exist.</span> <span class="choice  " id="choice6">The limit does not exist because <script type="math/tex">f</script> is not defined the
+same to the left and right of 2.</span> <span class="choice  " id="choice7">The limit does not exist because <script type="math/tex">f(2)</script> is very
+different from the values of <script type="math/tex">f</script> near 2.</span> <span class="choice  " id="choice8">The limit does not exist because <script type="math/tex">\lim _{x\to 2^-}f(x) \neq \lim _{x\to 2^+}f(x)</script>.</span> </div>
+<!--l. 71--><p class="noindent">__________________________________________________________________
+</p><!--l. 75--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to 2}f(x) = \answer {DNE} </script> </p><div class="multiple-choice" id="problem4"><span class="choice  " id="choice9">The limit does exist.</span> <span class="choice  " id="choice10">The limit does not exist because <script type="math/tex">f</script> is not defined the
+same to the left and right of 2.</span> <span class="choice  " id="choice11">The limit does not exist because <script type="math/tex">f(2)</script> is very
+different from the values of <script type="math/tex">f</script> near 2.</span> <span class="choice correct " id="choice12">The limit does not exist because <script type="math/tex">\lim _{x\to 2^-}f(x) \neq \lim _{x\to 2^+}f(x)</script>.</span> </div>
+<!--l. 83--><p class="noindent">__________________________________________________________________
+</p><!--l. 87--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to 4}f(x) = \answer {-2} </script> </p><div class="multiple-choice" id="problem5"><span class="choice correct " id="choice13">The limit does exist.</span> <span class="choice  " id="choice14">The limit does not exist because <script type="math/tex">f</script> is flat near 4.</span> <span class="choice  " id="choice15">The limit
+                                                                  
+
+                                                                  
+does not exist because <script type="math/tex">f(4)</script> is very different from the values of <script type="math/tex">f</script> near 4.</span> <span class="choice  " id="choice16">The limit does
+not exist because <script type="math/tex">\lim _{x\to 4^-}f(x) \neq \lim _{x\to 4^+}f(x)</script>.</span> </div>
+</div>  
+ 
+
+                                                                  
+
+
+</body></html>

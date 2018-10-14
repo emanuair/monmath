@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="en"><head> <title>Limits  of  the  form  nonzero  over
+                                                                  
+
+                                                                  
+zero</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="digInLimitsOfTheFormNonZeroOverZero.tex"/> 
+<meta name="date" content="2018-09-28 21:31:00"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Calculate limits of the form number over zero."/> 
+<meta name="learning-outcome" content="Identify determinate and indeterminate forms."/> 
+<meta name="learning-outcome" content="Distinguish between determinate and indeterminate forms."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="0801f22efc09e33fd0dc975c860e3971ca2d4363 indeterminateForms/digInLimitsOfTheFormNonZeroOverZero.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div class="abstract">
+<!--l. 13--><p class="noindent">What can be said about limits that have the form nonzero over zero?
+</p></div>
+<div class="maketitle"></div>
+<!--l. 18--><p class="noindent">Let’s cut to the chase:
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a id="x1-64r1"></a>A limit <script type="math/tex; mode=display"> \lim _{x\to a} \frac {f(x)}{g(x)} </script> is said to be of the form <script type="math/tex">\relax \boldsymbol {\tfrac {\#}{0}}</script> if <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = k\qquad \text {and}\qquad \lim _{x\to a} g(x) =0. </script> where <script type="math/tex">k</script> is some nonzero constant.
+</div>
+<div role="article" class="problem-environment question" id="problem2"><a id="x1-65r2"></a> Which of the following limits are of the form <script type="math/tex">\relax \boldsymbol {\tfrac {\#}{0}}</script>? <div class="select-all" id="problem3"><a id="x1-66r3"></a> <span class="choice correct " id="choice1"><script type="math/tex">\lim _{x\to -1} \frac {1}{(x+1)^2}</script></span> <span class="choice  " id="choice2"><script type="math/tex">\lim _{x\to 2}\frac {x^2-3x+2}{x-2}</script></span> <span class="choice  " id="choice3"><script type="math/tex">\lim _{x\to 0}\frac {\sin (x)}{x}</script></span> <span class="choice correct " id="choice4"><script type="math/tex">\lim _{x\to 2}\frac {x^2-3x-2}{x-2}</script></span> <span class="choice correct " id="choice5"><script type="math/tex">\lim _{x\to 1}\frac {e^x}{\ln (x)}</script></span>
+</div>
+</div>
+<!--l. 43--><p class="noindent">In our next example, let’s see what is going on with limits of the form <script type="math/tex">\relax \boldsymbol {\tfrac {\#}{0}}</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a id="x1-67r4"></a>Consider the function <script type="math/tex; mode=display"> f(x) = \frac {1}{(x+1)^2}. </script> Use a table of values to investigate <script type="math/tex">\lim _{x\to -1} \frac {1}{(x+1)^2}</script>. <div class="theorem-like problem-environment explanation" id="problem5"><a id="x1-68r5"></a>Fill in the table below: <script type="math/tex; mode=display"> \begin {array}{c|c|c} x & (x+1)^{2} & f(x) = \frac {1}{(x+1)^2}\\ \hline -1.1 & 0.01 & 100 \\ -1.01 & 0.0001 & 10000 \\ -1.001 & 0.000001 & \answer {1000000} \\ -1.0001 & 0.00000001 & \answer {100000000} \\ -0.9 & 0.01 & \answer {100} \\ -0.99 & 0.0001 & \answer {10000} \\ -0.999 & 0.000001 & \answer {1000000} \\ -0.9999 & 0.00000001 & \answer {100000000} \\ \end {array} </script>
+What does the table tell us about <script type="math/tex; mode=display"> \lim _{x\to -1} \frac {1}{(x+1)^2}? </script> It appears that the limit does not exist, since the
+expression <script type="math/tex; mode=display"> \frac {1}{(x+1)^2} </script> becomes larger and larger as <script type="math/tex">x</script> approaches <script type="math/tex">-1</script> . So, <script type="math/tex; mode=display"> \lim _{x\to -1} \frac {1}{(x+1)^2}\qquad \text {is of the form }\numOverZero </script> as <script type="math/tex; mode=display"> \lim _{x\to -1} 1 = 1 \qquad \text {and}\qquad \lim _{x\to -1}(x+1)^2 = 0. </script> Moreover, as <script type="math/tex">x</script>
+approaches <script type="math/tex">-1</script>:
+     <ul class="itemize1">
+     <li class="itemize">The numerator is positive.
+     </li>
+     <li class="itemize">The denominator approaches zero and is positive.</li></ul>
+<!--l. 88--><p class="noindent">Hence, the expression <script type="math/tex; mode=display"> \frac {1}{(x+1)^2} </script> will become arbitrarily large as <script type="math/tex">x</script> approaches <script type="math/tex">-1</script>. We can see this
+in the graph of <script type="math/tex">f</script>. </p><div class="image-environment" role="img" aria-labelledby="image-alt-1">  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+</div>
+                                                                  
+
+                                                                  
+</div>
+<!--l. 113--><p class="noindent">We are now ready for our next definition.
+</p>
+<div class="theorem-like problem-environment definition" id="problem6"><a id="x1-69r6"></a>If <script type="math/tex">f(x)</script> grows arbitrarily large as <script type="math/tex">x</script> approaches <script type="math/tex">a</script>, we write <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = \infty </script> and say that the limit of <script type="math/tex">f(x)</script> is
+<strong>infinity</strong> as <script type="math/tex">x</script> goes to <script type="math/tex">a</script>.
+<!--l. 124--><p class="noindent">If <script type="math/tex">|f(x)|</script> grows arbitrarily large as <script type="math/tex">x</script> approaches <script type="math/tex">a</script> and <script type="math/tex">f(x)</script> is negative, we write <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = -\infty </script> and say that the
+limit of <script type="math/tex">f(x)</script> is <strong> negative infinity</strong> as <script type="math/tex">x</script> goes to <script type="math/tex">a</script>.
+</p><!--l. 132--></div>
+<!--l. 134--><p class="noindent">Note: Saying “the limit is equal to infinity” describes more precisely the behavior of
+the function <script type="math/tex">f</script> near <script type="math/tex">a</script>, than just saying ”the limit does not exist”.
+</p><!--l. 136--><p class="noindent">Let’s consider a few more examples.
+</p>
+<div class="theorem-like problem-environment example" id="problem7"><a id="x1-70r7"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to -2} \frac {e^x}{(x+2)^4} </script> <div class="theorem-like problem-environment explanation" id="problem8"><a id="x1-71r8"></a>First let’s look at the form of this limit. We do this by taking
+the limits of both the numerator and denominator: <script type="math/tex; mode=display"> \lim _{x\to -2} e^x = \answer [given]{\frac {1}{e^2}}\qquad \text {and}\lim _{x\to -2}\left ((x+2)^4\right ) = 0. </script> So, this limit is of the
+form <script type="math/tex">\relax \boldsymbol {\tfrac {\#}{0}}</script>. This form is <strong>determinate</strong>, since it implies that the limit does not
+exist.<br class="newline"/>But, we can do better than that! As <script type="math/tex">x</script> approaches <script type="math/tex">-2</script>:
+     <ul class="itemize1">
+     <li class="itemize">The numerator is a <span class="word-choice" id="word-choice9"><a id="x1-72r9"></a><span class="choice correct " id="choice6">positive</span><span class="choice  " id="choice7">negative</span>
+     </span> number.
+     </li>
+     <li class="itemize">The denominator is <span class="word-choice" id="word-choice10"><a id="x1-73r10"></a><span class="choice correct " id="choice8">positive</span><span class="choice  " id="choice9">negative</span>
+     </span> and is approaching zero.</li></ul>
+<!--l. 155--><p class="noindent">This means that <script type="math/tex; mode=display"> \lim _{x\to -2} \frac {e^x}{(x+2)^4} = \infty . </script>
+</p><!--l. 160--></div>
+</div>
+
+<div class="theorem-like problem-environment example" id="problem11"><a id="x1-74r11"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to 3^+} \frac {x^2-9x+14}{x^2-5x+6} </script> <div class="theorem-like problem-environment explanation" id="problem12"><a id="x1-75r12"></a>First let’s look at the form of this limit, which we do by taking the limits
+of both the numerator and denominator. <script type="math/tex; mode=display"> \lim _{x\to 3^+} \left (x^2-9x+14\right ) = \answer [given]{-4}\qquad \text {and}\lim _{x\to 3^+}\left (x^2-5x+6\right ) = 0 </script> This limit is of the form <script type="math/tex">\relax \boldsymbol {\tfrac {\#}{0}}</script>. Next, we should
+factor the numerator and denominator to see if we can simplify the problem at all.
+<script type="math/tex; mode=display"> \begin{align*} 
+      \lim_{x\to 3^+}\frac{x^2-9x+14}{x^2-5x+6} &= \lim_{x\to 3^+}\frac{\cancel{(x-2)}(x-7)}{\cancel{(x-2)}(x-3)}\\
+      &= \lim_{x\to 3^+}\frac{x-7}{x-3}
+    \end{align*}</script>
+Canceling a factor of <script type="math/tex">x-2</script> in the numerator and denominator means we can more easily
+check the behavior of this limit. As <script type="math/tex">x</script> approaches <script type="math/tex">3</script> from the right:
+     <ul class="itemize1">
+     <li class="itemize">The numerator is a <span class="word-choice" id="word-choice13"><a id="x1-76r13"></a><span class="choice  " id="choice10">positive</span><span class="choice correct " id="choice11">negative</span>
+     </span> number.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize">The denominator is <span class="word-choice" id="word-choice14"><a id="x1-77r14"></a><span class="choice correct " id="choice12">positive</span><span class="choice  " id="choice13">negative</span>
+     </span> and approaching zero.</li></ul>
+<!--l. 186--><p class="noindent">This means that <script type="math/tex; mode=display"> \lim _{x\to 3^+} \frac {x^2-9x+14}{x^2-5x+6} = -\infty . </script>
+</p></div>
+</div>
+<!--l. 193--><p class="noindent">Here is our final example.
+</p>
+<div class="theorem-like problem-environment example" id="problem15"><a id="x1-78r15"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to 3} \frac {x^2-9x+14}{x^2-5x+6} </script> <div class="theorem-like problem-environment explanation" id="problem16"><a id="x1-79r16"></a>We’ve already considered part of this example, but now we consider the
+two-sided limit. We already know that <script type="math/tex; mode=display"> \lim _{x\to 3} \frac {x^2-9x+14}{x^2-5x+6} = \lim _{x\to 3}\frac {x-7}{x-3}, </script> and that this limit is of the form <script type="math/tex">\relax \boldsymbol {\tfrac {\#}{0}}</script>. We also
+know that as <script type="math/tex">x</script> approaches <script type="math/tex">3</script> from the right,
+     <ul class="itemize1">
+     <li class="itemize">The numerator is a negative number.
+     </li>
+     <li class="itemize">The denominator is positive and approaching zero.</li></ul>
+<!--l. 212--><p class="noindent">Hence our function is approaching <script type="math/tex">-\infty </script> from the right.
+</p><!--l. 214--><p class="noindent">As <script type="math/tex">x</script> approaches <script type="math/tex">3</script> from the left, </p>
+     <ul class="itemize1">
+     <li class="itemize">The numerator is negative.
+     </li>
+     <li class="itemize">The denominator is negative and approaching zero.</li></ul>
+<!--l. 219--><p class="noindent">Hence our function is approaching <script type="math/tex">\infty </script> from the left. This means <script type="math/tex; mode=display"> \lim _{x\to 3} \frac {x^2-9x+14}{x^2-5x+6} = \answer [format=string,given]{DNE}. </script> We can confirm our
+results of the previous two examples by looking at the graph of <script type="math/tex">y=\frac {x^2-9x+14}{x^2-5x+6}</script>: <script type="math/tex; mode=display"> \graph [xmin=-10,xmax=15,ymin=-10,ymax=10]{\frac {x^2-9x+14}{x^2-5x+6}} </script> 
+</p></div>
+</div>
+<!--l. 233--><p class="noindent">Some people worry that the mathematicians are passing into mysticism when we talk
+about infinity and negative infinity. However, when we write <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = \infty \qquad \text {and}\qquad \lim _{x\to a} g(x) = -\infty </script> all we mean is that as <script type="math/tex">x</script>
+approaches <script type="math/tex">a</script>, <script type="math/tex">f(x)</script> becomes arbitrarily large and <script type="math/tex">|g(x)|</script> becomes arbitrarily large, with <script type="math/tex">g(x)</script> taking
+negative values.  
+ 
+
+                                                                  
+
+
+</p></body></html>

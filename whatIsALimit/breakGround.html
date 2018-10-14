@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en"><head> <title>Stars  and
+                                                                  
+
+                                                                  
+functions</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="breakGround.tex"/> 
+<meta name="date" content="2018-09-15 20:58:00"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Consider values of a function at inputs approaching a given point."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="b7bb2d3fa784538338e0bdb779ae426691f28281 whatIsALimit/breakGround.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
+\newcommand {\descriptionlabel }[1]{\hspace {\labelsep }\textbf {#1:}}                  </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div class="abstract">
+<!--l. 11--><p class="noindent">Two young mathematicians discuss stars and functions.
+</p></div>   <div class="maketitle"></div>
+Check out this dialogue between two calculus students (based on a true
+story):
+     <dl class="dialogue"><dt class="actor">
+Devyn </dt><dd class="speech">Riley, did you know I like looking at the stars at night?
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">Stars  are  freaking  awesome  balls  of  nuclear  fire  whose  light  took
+     thousands of years to reach us.
+     </dd><dt class="actor">
+Devyn </dt><dd class="speech">I know! But did you know that the best way to see a very dim star is
+     to look <strong>near</strong> it but <strong>not exactly at</strong> it? It’s because then you can use the
+    “rods” in your eye, which work better in low light than the “cones” in your
+     eyes.
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">That’s amazing! Hey, that reminds me of when we were talking about
+     the two functions <script type="math/tex; mode=display"> f(x) = \frac {x^2-3x+2}{x-2}\qquad \text {and}\qquad g(x)= x-1, </script> which we now know are completely different functions.
+     </dd><dt class="actor">
+Devyn </dt><dd class="speech">Whoa. How are you seeing a connection here?
+     </dd><dt class="actor">
+Riley </dt><dd class="speech">If we want to understand what is happening with the function <script type="math/tex; mode=display"> f(x) = \frac {x^2-3x+2}{x-2}, </script> at <script type="math/tex">x=2</script>, we
+     can’t do it by setting <script type="math/tex">x=2</script>. Instead we need to look <strong>near</strong> <script type="math/tex">x=2</script> but <strong>not exactly at</strong>
+     <script type="math/tex">x=2</script>.
+     </dd><dt class="actor">
+Devyn </dt><dd class="speech">Ah ha! Because if we are <strong>not exactly at</strong> <script type="math/tex">x=2</script>, then <script type="math/tex; mode=display"> \frac {x^2-3x+2}{x-2} = x-1. </script></dd></dl>
+<div role="article" class="problem-environment problem" id="problem1"><a id="x1-65r1"></a> Let <script type="math/tex">f(x) = \frac {x^2-3x+2}{x-2}</script> and <script type="math/tex">g(x) = x-1</script>. Which of the following is true? <div class="multiple-choice" id="problem2"><span class="choice  " id="choice1"><script type="math/tex">f(x) = g(x)</script> for every value of <script type="math/tex">x</script>.</span> <span class="choice  " id="choice2">There is no <script type="math/tex">x</script>-value
+where <script type="math/tex">f(x) = g(x)</script>.</span> <span class="choice correct " id="choice3"><script type="math/tex">f(x) = g(x)</script> when <script type="math/tex">x\ne 2</script>.</span> </div>
+</div>
+<div role="article" class="problem-environment problem" id="problem3"><a id="x1-66r2"></a> When you evaluate <script type="math/tex; mode=display"> f(x) = \frac {x^2-3x+2}{x-2}, </script> at <script type="math/tex">x</script>-values approaching (but not equal to) <script type="math/tex">2</script>, what happens to the
+value of <script type="math/tex">f(x)</script>?  The value of <script type="math/tex">f(x)</script> approaches <script type="math/tex">\answer {1}</script>.
+<div role="article" class="problem-environment problem" id="problem4"><a id="x1-67r3"></a> Just from checking some values, can you be absolutely certain that your answer to
+the previous problem is correct?  <div class="multiple-choice" id="problem5"><span class="choice  " id="choice4">yes</span> <span class="choice correct " id="choice5">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback6">Here you only have information about a few specific points on the graph. There are
+infinitely many <script type="math/tex">x</script>-values close to, but not equal to, <script type="math/tex">x = 2</script>. Hence we cannot be completely
+certain. </div>
+                                                                  
+
+                                                                  
+</div>
+</div>
+ 
+ 
+
+                                                                  
+
+
+</body></html>

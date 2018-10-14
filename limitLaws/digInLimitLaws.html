@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="en"><head> <title>The  limit
+                                                                  
+
+                                                                  
+laws</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="digInLimitLaws.tex"/> 
+<meta name="date" content="2018-09-15 21:29:00"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Calculate limits using the limit laws."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="d734c537d624935121e703512b39e9c7badc9b8b limitLaws/digInLimitLaws.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div class="abstract">
+<!--l. 10--><p class="noindent">We give basic laws for working with limits.
+</p></div>   <div class="maketitle"></div>In the previous section were able to compute the limits
+<script type="math/tex; mode=display"> \lim _{x\to \pi } x^3=\pi ^3,\quad \lim _{x\to \pi } \sqrt {2}=\sqrt {2},\quad \lim _{x\to \pi } \cos {x}= -1, </script>
+<!--l. 19--><p class="noindent">using continuity of the functions <script type="math/tex">x^3</script>, <script type="math/tex">\sqrt {2}</script>, and <script type="math/tex">\cos {x}</script>, at <script type="math/tex">x=\pi </script>. Does this imply that we can compute
+the limits </p><script type="math/tex; mode=display"> \begin{align*} 
+   &\lim_{x\to \pi} (x^3-\cos{x}),\\
+  &\lim_{x\to \pi} \frac{\sqrt{2}}{\cos{x}},\\
+  &\lim_{x\to \pi} (\sqrt{2}\cdot x^3\cdot\cos{x}), \text{ or}\\
+  &\lim_{x\to \pi} \cos({x^3})?
+\end{align*}</script>
+<!--l. 28--><p class="noindent">Well, we cannot use continuity here, because we don’t know if the functions <script type="math/tex">x^3-\cos {x}</script>, <script type="math/tex">\frac {\sqrt {2}}{\cos {x}}</script>, <script type="math/tex">\sqrt {2}\cdot x^3\cdot \cos {x}</script>, and <script type="math/tex">\cos ({x^3})</script>
+are continuous at <script type="math/tex">x=\pi </script>, and
+</p><!--l. 32--><p class="noindent">we have no other tools available, since the graphs and tables are not reliable.
+Obviously, we need more tools to help us with computation of limits.
+</p><!--l. 36--><p class="noindent">In this section, we present a handful of rules, called the <em>Limit Laws</em>, that allow us to
+find limits of various combinations of functions.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem1"><a id="x1-64r1"></a><span class="theorem-like-title">Limit Laws</span><a class="ximera-label" id="theorem:limit-laws"></a> Suppose that <script type="math/tex">\lim _{x\to a}f(x)=L</script>, <script type="math/tex">\lim _{x\to a}g(x)=M</script>.
+     <dl class="description"><dt class="description">
+Sum/Difference Law </dt><dd class="description"><script type="math/tex">\lim _{x\to a} (f(x) \pm g(x)) = \lim _{x\to a}f(x) \pm \lim _{x\to a}g(x)=L \pm M</script>.
+     </dd><dt class="description">
+Product Law </dt><dd class="description"><script type="math/tex">\lim _{x\to a} (f(x)g(x)) = \lim _{x\to a}f(x)\cdot \lim _{x\to a}g(x)=LM</script>.
+     </dd><dt class="description">
+Quotient Law </dt><dd class="description"><script type="math/tex">\lim _{x\to a} \frac {f(x)}{g(x)} = \frac {\lim _{x\to a}f(x)}{\lim _{x\to a}g(x)}=\frac {L}{M}</script>, if <script type="math/tex">M\ne 0</script>.</dd></dl>
+<!--l. 51--><p class="noindent"><a class="ximera-label" id="thm:limit laws"></a>
+</p></div>
+<!--l. 54--><p class="noindent">In plain language, “limit of a sum equals the sum of the limits,” “limit of a product
+equals the product of the limits,” etc.
+</p><!--l. 56--><p class="noindent">Let’s examine how the Limit Laws can be used in computation of limits.
+</p>
+<div class="theorem-like problem-environment example" id="problem2"><a id="x1-65r2"></a>Compute the following limits using Limit Laws:
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem"><a class="ximera-label" id="lle1a"></a> <script type="math/tex">\lim _{x\to \pi } (x^3-\cos {x})</script>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem"><a class="ximera-label" id="lle1b"></a> <script type="math/tex">\lim _{x\to \pi } \frac {\sqrt {2}}{\cos {x}}</script>
+                                                                  
+
+                                                                  
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd class="enumerate-enumitem"><a class="ximera-label" id="lle1c"></a> <script type="math/tex">\lim _{x\to \pi } (\sqrt {2}\cdot x^3\cdot \cos {x})</script>
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd class="enumerate-enumitem"><a class="ximera-label" id="lle1d"></a> <script type="math/tex">\lim _{x\to \pi } \cos ({x^3})</script></dd></dl>
+<div class="theorem-like problem-environment explanation" id="problem3"><a id="x1-70r3"></a>For <script type="math/tex">\lim _{x\to \pi } (x^3-\cos {x})</script>, write: <script type="math/tex; mode=display"> \begin{align*} 
+         \lim_{x\to \pi} (x^3-\cos{x})&=\lim_{x\to \pi} x^3-\lim_{x\to \pi}\cos{x} && \text{by Difference Law}\\
+      &=\pi^3-(-1)\\
+      &=\pi^3+1
+    \end{align*}</script>
+For <script type="math/tex">\lim _{x\to \pi } \frac {\sqrt {2}}{\cos {x}}</script>, write: <script type="math/tex; mode=display"> \begin{align*} 
+         \lim_{x\to \pi} \frac{\sqrt{2}}{\cos{x}}&=\frac{\lim_{x\to \pi}\sqrt{2}}{\lim_{x\to \pi}\cos{x}} && \text{by Quotient Law}\\
+      &=\frac{\sqrt{2}}{-1}\\
+      &=-\sqrt{2}
+    \end{align*}</script>
+For <script type="math/tex">\lim _{x\to \pi } (\sqrt {2}\cdot x^3\cdot \cos {x})</script>, using the Product Law, we can write: <script type="math/tex; mode=display"> \lim _{x\to \pi } (\sqrt {2}\cdot x^3\cdot \cos {x})=\lim _{x\to \pi } \sqrt {2}\cdot \lim _{x\to \pi }x^3\cdot \lim _{x\to \pi }\cos {x} </script> <script type="math/tex; mode=display"> \begin{align*} 
+         &=\sqrt{2}\cdot \pi^3\cdot(-1)\\
+      &=-\sqrt{2}\pi^3
+    \end{align*}</script>
+For <script type="math/tex">\lim _{x\to \pi } \cos ({x^3})</script>, write: <script type="math/tex; mode=display"> \lim _{x\to \pi } \cos ({x^3})= \cdots </script> The function <script type="math/tex">\cos ({x^3})</script> is a combination of the functions <script type="math/tex">\cos ({x})</script> and <script type="math/tex">x^3</script>, but it is neither a
+sum/difference, nor a product, nor a quotient of these two functions, so we cannot
+apply any of the Limit Laws. This function is a composition of the two functions, <script type="math/tex">\cos ({x})</script>
+and <script type="math/tex">x^3</script>.
+</div>
+</div> <div class="theorem-like problem-environment example" id="problem4"><a id="x1-71r4"></a>
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem">Compute the following limit using limit laws: <script type="math/tex; mode=display"> \lim _{x\to 1}(5x^2+3x-2) </script> <div class="theorem-like problem-environment explanation" id="problem5"><a id="x1-73r5"></a>Well, get out your pencil and
+     write with me: <script type="math/tex; mode=display"> \lim _{x\to 1} (5x^2+3x-2) = \lim _{x\to 1} 5x^2 + \lim _{x\to 1} \answer [given]{3x} - \lim _{x\to 1}2 </script> by the Sum/Difference Law. So now <script type="math/tex; mode=display"> = 5\lim _{x\to 1} x^2 + 3\lim _{x\to 1} x - \lim _{x\to 1}\answer [given]{2} </script> by the Product Law.
+     Finally by continuity of <script type="math/tex">x^b</script> and <script type="math/tex">k</script>, <script type="math/tex; mode=display"> = 5(1)^2 + 3(1) - 2 =\answer [given]{6}. </script> We can check our answer by looking at the
+     graph of <script type="math/tex">y=f(x)</script>: <script type="math/tex; mode=display"> \graph {5x^2+3x-2} </script> 
+     </div>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem">Is the polynomial function <script type="math/tex">f(x)=5x^2+3x-2</script> continuous at <script type="math/tex">x=1</script>? <div class="theorem-like problem-environment explanation" id="problem6"><a id="x1-75r6"></a>We have to check whether <script type="math/tex; mode=display"> \lim _{x\to 1} f(x)=f(1). </script> Since we
+     already know that <script type="math/tex"> \lim _{x\to 1} (5x^2+3x-2)=6</script>, we only have to compute <script type="math/tex">f(1)</script>. <script type="math/tex; mode=display"> \begin{align*} 
+f(1)&=5(1)^2 + 3(1) - 2\\
+     &=6
+     \end{align*}</script>
+     Therefore, the polynomial function <script type="math/tex">f</script> is continuous at <script type="math/tex">x=1</script>.
+     <!--l. 162--><p class="noindent">But what about continuity at any other value <script type="math/tex">x</script>? Is the function <script type="math/tex">f</script> continuous on
+     its entire domain?
+     </p><!--l. 164--><p class="noindent">And what about any other polynomial function?
+                                                                  
+
+                                                                  
+     </p><!--l. 166--><p class="noindent">Are polynomials continuous on their domains?
+     </p></div></dd></dl>
+<!--l. 169--></div>
+<!--l. 171--><p class="noindent">We can generalize the example above to get the following theorems.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem7"><a id="x1-76r7"></a><span class="theorem-like-title">Continuity of Polynomial Functions</span> <strong>All polynomial functions</strong>, meaning
+functions of the form <script type="math/tex; mode=display"> f(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1 x + a_0 </script> where <script type="math/tex">n</script> is a positive integer and each coefficient <script type="math/tex">a_i</script>, <script type="math/tex">i=0, 1,...,n</script>, is
+a real number, are <strong>continuous for all real numbers</strong>. <div class="theorem-like problem-environment explanation" id="problem8"><a id="x1-77r8"></a>In order to show
+that any polynomial, <script type="math/tex">f</script>, is continuous at any real number, <script type="math/tex">a</script>, we have to show
+that <script type="math/tex; mode=display"> \lim _{x\to a} f(x)=f(a). </script> Write with me: <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = \lim _{x\to a} (a_nx^n + a_{n-1}x^{n-1} + \dots + a_1 x + a_0 ) </script> Now by the Sum Law, <script type="math/tex; mode=display"> = \lim _{x\to a} a_nx^n + \lim _{x\to a} a_{n-1}x^{n-1} + \dots + \lim _{x\to a}a_1 x + \lim _{x\to a} a_0 </script> and by the Product Law,
+<script type="math/tex; mode=display"> \begin{align*} 
+    = \lim_{x\to a} a_n\cdot \lim_{x\to a}x^n + \lim_{x\to a} a_{n-1}\cdot \lim_{x\to a}x^{n-1} &+ \dots\\
+    &+  \lim_{x\to a}a_1 \cdot \lim_{x\to a}x + \lim_{x\to a} a_0
+  \end{align*}</script>
+and by Continuity <script type="math/tex; mode=display"> = a_n\cdot a^n + a_{n-1}\cdot a^{n-1} + \dots + a_1 \cdot a + a_0 </script> And this equals…<script type="math/tex; mode=display"> =f(a) </script> Since we have shown that <script type="math/tex">\lim _{x\to a} f(x) = f(a)</script>, we have shown that <script type="math/tex">f</script>
+is continuous at <script type="math/tex">x=a</script>.
+</div>
+</div>
+<div class="theorem-like problem-environment theorem" id="problem9"><a id="x1-78r9"></a><span class="theorem-like-title">Continuity of Rational Functions</span> A <strong>rational function</strong> h, meaning a function of the
+form <script type="math/tex; mode=display"> h(x)=\frac {f(x)}{g(x)} </script> where <script type="math/tex">f </script>and <script type="math/tex">g</script> are polynomials, is <strong>continuous</strong> for all real numbers except where <script type="math/tex">g(x)=0</script>.
+That is, rational functions are continuous wherever they are defined. <div class="theorem-like problem-environment explanation" id="problem10"><a id="x1-79r10"></a>Let <script type="math/tex">a</script> be a real
+number such that <script type="math/tex">g(a)\neq 0</script>. Then, since <script type="math/tex">g(x)</script> is continuous at <script type="math/tex">a</script>, <script type="math/tex">\lim _{x\to a} g(x) \neq 0</script>. Therefore, write with me, <script type="math/tex; mode=display"> \lim _{x \to a} h(x) = \lim _{x\to a} \frac {f(x)}{g(x)} </script> and
+now by the Quotient Law, <script type="math/tex; mode=display"> \frac {\lim _{x\to a} f(x)}{ \lim _{x\to a} g(x)} </script> and by the continuity of polynomials we may
+now set <script type="math/tex">x=a</script> <script type="math/tex; mode=display"> \frac {f(a)}{g(a)}=h(a). </script> Since we have shown that <script type="math/tex">\lim _{x\to a} h(x) = h(a)</script>, we have shown that <script type="math/tex">h</script> is continuous at
+<script type="math/tex">x=a</script>.
+</div>
+</div>
+<div role="article" class="problem-environment question" id="problem11"><a id="x1-80r11"></a> Where is <script type="math/tex">f(x) = \frac {x^2-3x+2}{x-2}</script> continuous?  <div class="multiple-choice" id="problem12"><span class="choice  " id="choice1">for all real numbers</span> <span class="choice  " id="choice2">at <script type="math/tex">x=2</script></span> <span class="choice correct " id="choice3">for all real numbers, except <script type="math/tex">x=2</script></span> <span class="choice  " id="choice4">impossible to say</span> </div>
+</div> <div role="article" class="problem-environment question" id="problem13"><a id="x1-81r12"></a> True or false: If <script type="math/tex">f</script> and <script type="math/tex">g</script> are continuous functions on an interval <script type="math/tex">I</script>, then <script type="math/tex">f\pm g</script> is continuous
+on <script type="math/tex">I</script>.  <div class="multiple-choice" id="problem14"><span class="choice correct " id="choice5">True</span> <span class="choice  " id="choice6">False</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback15">Let’s assume that <script type="math/tex">I</script> is an open interval and <script type="math/tex">a</script> is a number in <script type="math/tex">I</script>. Remember, since <script type="math/tex">f</script> and <script type="math/tex">g</script>
+are both continuous on <script type="math/tex">I</script>, they are both continuous at <script type="math/tex">a</script>.
+<!--l. 260--><p class="noindent">This means that <script type="math/tex"> \lim _{x\to a}f(x)=f(a)</script> and <script type="math/tex"> \lim _{x\to a}g(x)=g(a)</script>.
+</p><!--l. 262--><p class="noindent">Now, define a new function, <script type="math/tex">h</script>, where <script type="math/tex">h(x)= f(x)+g(x)</script>, for all <script type="math/tex">x</script> in <script type="math/tex">I</script>. We have to show that <script type="math/tex">h</script> is continuous
+at <script type="math/tex">a</script>, or that
+</p><!--l. 266--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to a} h(x) = h(a). </script> Lat’s start with
+</p><!--l. 271--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to a} h(x) = \lim _{x\to a} (f(x)+g(x)) = \lim _{x\to a} f(x)+\lim _{x\to a}g(x)\hspace {0.04in}by \hspace {0.04in}Sum\hspace {0.04in} Law, </script> and, therefore,
+</p><!--l. 276--><p class="noindent"><script type="math/tex; mode=display"> \lim _{x\to a} h(x) = f(a)+g(a)=h(a) \checkmark </script> We have proved that <script type="math/tex">h</script> is continuous at any number <script type="math/tex">a</script> in <script type="math/tex">I</script>. Therefore, <script type="math/tex">h</script> is continuous on <script type="math/tex">I</script>.
+                                                                  
+
+                                                                  
+Similarly, we can prove that <script type="math/tex">f+g</script> is continuous on any interval <script type="math/tex">I</script>, by showing it is left-or
+right-continuous at the endpoints. We can adjust the proof for the function <script type="math/tex">f-g</script>. </p></div>
+</div>
+<div role="article" class="problem-environment question" id="problem16"><a id="x1-82r13"></a> True or false: If <script type="math/tex">f</script> and <script type="math/tex">g</script> are continuous functions on an interval <script type="math/tex">I</script>, then <script type="math/tex">f/g</script> is continuous on
+<script type="math/tex">I</script>.  <div class="multiple-choice" id="problem17"><span class="choice  " id="choice7">True</span> <span class="choice correct " id="choice8">False</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback18">In this case, <script type="math/tex">f/g</script> will not be continuous for <script type="math/tex">x</script> where <script type="math/tex">g(x) = 0</script>. </div>
+</div>
+<!--l. 300--><p class="noindent">We still don’t know how to compute a limit of a composition of two functions. Our
+next theorem provides basic rules for how limits interact with composition of
+functions.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem19"><a id="x1-83r14"></a><span class="theorem-like-title">Composition Limit Law</span> If <script type="math/tex">f(x)</script> is continuous at <script type="math/tex">b = \lim _{x\to a} g(x)</script>, then <script type="math/tex; mode=display"> \lim _{x\to a} f(g(x)) = f(\lim _{x\to a} g(x)). </script>
+</div>
+<!--l. 311--><p class="noindent">Because the limit of a continuous function is the same as the function value, we can
+now pass limits inside continuous functions.
+</p>
+<div class="theorem-like problem-environment corollary" id="problem20"><a id="x1-84r15"></a><span class="theorem-like-title">Continuity of Composite Functions</span>
+<!--l. 316--><p class="noindent">If <script type="math/tex">g</script> is continuous at <script type="math/tex">x=a</script>, and if <script type="math/tex">f </script> is continuous at <script type="math/tex">g(a)</script>, then <script type="math/tex">f(g(x))</script> is continuous at <script type="math/tex">x=a</script>.
+</p><!--l. 320--></div> Using the Composition Limit Law, we can compute the last example from the
+beginning of this section. <div class="theorem-like problem-environment example" id="problem21"><a id="x1-85r16"></a>Compute the following limit using limit laws: <script type="math/tex; mode=display"> \lim _{x \to \pi }\cos ({x^3}) </script> <div class="theorem-like problem-environment explanation" id="problem22"><a id="x1-86r17"></a>We will use
+the Composition Limit Law. Let <script type="math/tex; mode=display"> f(g(x))=\cos ({x^3}), </script> where <script type="math/tex">f(x)=\cos {x}</script>, and <script type="math/tex">g(x)=x^3</script>. Now, continuity of <script type="math/tex">x^3</script> implies that <script type="math/tex">\lim _{x \to \pi }g(x)=\pi ^3</script>.
+Continuity of <script type="math/tex">\cos {x}</script> implies that <script type="math/tex">f</script> is continuous at <script type="math/tex">\pi ^3=\lim _{x \to \pi }g(x)</script>. Now, the Composition Limit Law
+implies that <script type="math/tex; mode=display"> \lim _{x \to \pi }\cos ({x^3})= \cos \Bigl ({\lim _{x \to \pi } x^3}\Bigr )=\cos ({\pi ^3})\approx 0.91726. </script>
+<!--l. 342--><p class="noindent">We can confirm our results by checking out the graph of <script type="math/tex">y=f(g(x))</script>: <script type="math/tex; mode=display"> \graph {\cos ({x^3})} </script> 
+</p></div>
+</div>
+<!--l. 350--><p class="noindent">Many of the Limit Laws and theorems about continuity in this section might seem
+like they should be obvious. You may be wondering why we spent an entire section
+on these theorems. The answer is that these theorems will tell you exactly
+when it is easy to find the value of a limit, and exactly what to do in those
+cases.
+</p><!--l. 356--><p class="noindent">The most important thing to learn from this section is whether the limit laws can be
+applied for a certain problem, and when we need to do something more
+interesting. We will begin discussing those more interesting cases in the next
+section.
+                                                                  
+
+                                                                  
+</p>
+<h3 class="sectionHead"><a id="x1-1000"></a>A list of questions</h3>
+<!--l. 362--><p class="noindent">Let’s try this out.
+</p>
+<div role="article" class="problem-environment question" id="problem23"><a id="x1-1001r18"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2+3x+2}{x+2} </script>  <div class="multiple-choice" id="problem24"><span class="choice correct " id="choice9">yes</span> <span class="choice  " id="choice10">no</span> </div>
+<div role="article" class="problem-environment question" id="problem25"><a id="x1-1002r19"></a> Compute: <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2+3x+2}{x+2}\begin {prompt} =\answer {3}\end {prompt} </script> <div class="feedback" data-feedback="attempt" id="feedback26">Since <script type="math/tex">f(x)=\frac {x^2+3x+2}{x+2}</script> is a rational function, and the denominator does not equal <script type="math/tex">0</script>, we see
+that <script type="math/tex">f(x)</script> is continuous at <script type="math/tex">x=2</script>. Thus, to find this limit, it suffices to plug <script type="math/tex">2</script> into <script type="math/tex">f(x)</script>. </div>
+</div>
+</div>
+<div role="article" class="problem-environment question" id="problem27"><a id="x1-1003r20"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 2}\frac {x^2-3x+2}{x-2} </script>  <div class="multiple-choice" id="problem28"><span class="choice  " id="choice11">yes</span> <span class="choice correct " id="choice12">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback29"><script type="math/tex">f(x) = \frac {x^2-3x+2}{x-2}</script> is a rational function, but the denominator <script type="math/tex">x-2</script> equals <script type="math/tex">0</script> when <script type="math/tex">x=2</script>. None of our current
+theorems address the situation when the denominator of a fraction approaches <script type="math/tex">0</script>. </div>
+</div>
+<div role="article" class="problem-environment question" id="problem30"><a id="x1-1004r21"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 0} x\sin (1/x) </script>  <div class="multiple-choice" id="problem31"><span class="choice  " id="choice13">yes</span> <span class="choice correct " id="choice14">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback32">If we are trying to use limit laws to compute this limit, we would first have
+to use the Product Law to say that <script type="math/tex; mode=display"> \lim _{x\to 0}x\sin (1/x)= \lim _{x\to 0} x \cdot \lim _{x\to 0} \sin (1/x). </script> We are only allowed to use this law
+if both limits exist, so we must check this first. We know from continuity
+that <script type="math/tex; mode=display"> \lim _{x\to 0}x=0. </script> However, we also know that <script type="math/tex">\sin (1/x)</script> oscillates “wildly” as <script type="math/tex">x</script> approaches <script type="math/tex">0</script>, and
+so the limit <script type="math/tex; mode=display"> \lim _{x\to 0} \sin (1/x) </script>does not exist. Therefore, we cannot use the Product Law. </div>
+</div>
+<div role="article" class="problem-environment question" id="problem33"><a id="x1-1005r22"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 0} \cot (x^3) </script>  <div class="multiple-choice" id="problem34"><span class="choice  " id="choice15">yes</span> <span class="choice correct " id="choice16">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback35">Notice that <script type="math/tex; mode=display"> \cot (x^3) = \frac {\cos (x^3)}{\sin (x^3)}. </script> If we are trying to use limit laws to compute this limit, we
+would like to use the Quotient Law to say that <script type="math/tex; mode=display"> \lim _{x\to 0} \frac {\cos (x^3)}{\sin (x^3)} = \frac {\lim _{x\to 0} \cos (x^3)}{\lim _{x\to 0} \sin (x^3)}. </script> We are only allowed to
+use this law if both limits exist and the denominator is not <script type="math/tex">0</script>. We suspect
+that the limit in the denominator might equal <script type="math/tex">0</script>, so we check this limit.
+<script type="math/tex; mode=display"> \begin{align*} 
+      \lim_{x\to 0} \sin(x^3) &= \sin(\lim_{x\to 0}x^3)\\
+      &=\sin(0) \\
+      &=0.
+  \end{align*}</script>
+This means that the denominator is zero and hence we cannot use the Quotient Law. </div>
+                                                                  
+
+                                                                  
+</div>
+<div role="article" class="problem-environment question" id="problem36"><a id="x1-1006r23"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 0}\sec ^2(e^x-1) </script>  <div class="multiple-choice" id="problem37"><span class="choice correct " id="choice17">yes</span> <span class="choice  " id="choice18">no</span> </div>
+<div role="article" class="problem-environment question" id="problem38"><a id="x1-1007r24"></a> Compute: <script type="math/tex; mode=display"> \lim _{x\to 0}\sec ^2(e^x-1)\begin {prompt} =\answer {1}\end {prompt} </script> <div class="feedback" data-feedback="attempt" id="feedback39">Notice that <script type="math/tex; mode=display"> \lim _{x\to 0} \sec ^2(e^x-1) = \lim _{x\to 0} \frac {1}{\cos ^2(e^x-1)}. </script> If we are trying to use Limit Laws to compute this limit, we
+would now have to use the Quotient Law to say that <script type="math/tex; mode=display"> \lim _{x\to 0} \frac {1}{\cos ^2(e^x-1)} = \frac { \lim _{x\to 0}1}{ \lim _{x\to 0}\cos ^2(e^x-1)}. </script> We are only allowed to use this
+law if both limits exist and the denominator is not <script type="math/tex">0</script>. Let’s check the denominator
+and numerator separately. First we’ll compute the limit of the denominator:
+<script type="math/tex; mode=display"> \begin{align*} 
+        \lim_{x\to 0}\cos^2(e^x-1) &= (\lim_{x\to 0}\cos{(e^x-1)})^{2}\\
+        &= \Bigl(\cos{\Big(\lim_{x\to 0}(e^x-1)\Bigr)}\Bigr)^{2}\\
+        & =\cos^2\Bigl(\lim_{x\to 0}(e^x-1)\Bigr)\\
+        &=\cos^2\Bigl(\lim_{x\to 0}(e^x)-\lim_{x\to 0}(1)\Bigr)\\
+        &=\cos^2(1-1)\\
+        &= \cos^2(0)\\
+        &=1
+      \end{align*}</script>
+Therefore, the limit in the denominator exists and does not equal <script type="math/tex">0</script>. We can use
+the Quotient Law, so we will compute the limit of the numerator: <script type="math/tex; mode=display"> \lim _{x\to 0}1=1 </script> Hence <script type="math/tex; mode=display"> \frac { \lim _{x\to 0}1}{ \lim _{x\to 0}\cos ^2(e^x-1)} = \frac {1}{1}=1 </script> </div>
+</div>
+</div>
+<div role="article" class="problem-environment question" id="problem40"><a id="x1-1008r25"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 1}{(x-1)\cdot \csc (\ln (x))} </script>  <div class="multiple-choice" id="problem41"><span class="choice  " id="choice19">yes</span> <span class="choice correct " id="choice20">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback42">If we are trying to use limit laws to compute this limit, we would
+have to use the Product Law to say that <script type="math/tex; mode=display"> \lim _{x\to 1}{(x-1)\cdot \csc (\ln (x))}= \lim _{x\to 1}{(x-1)\cdot \lim _{x\to 1}\csc (\ln (x))}. </script> We are only allowed to
+use this law if both limits exist. Let’s check each limit separately.
+<script type="math/tex; mode=display"> \begin{align*} 
+      \lim_{x\to 1} (x-1) &= \lim_{x\to 1} (x)-\lim_{x\to 1}(1)\\
+      &=1-1\\
+      &=0.
+    \end{align*}</script>
+So this limit exists. Now we check the other factor. Notice that <script type="math/tex; mode=display"> \lim _{x\to 1}\csc (\ln (x)) = \frac {1}{\sin (\ln (x))}. </script> If we are
+trying to use limit laws to compute this limit, we would now have to use
+the Quotient Law to say that <script type="math/tex; mode=display"> \frac {1}{\sin (\ln (x))} = \frac {\lim _{x\to 1}1}{\lim _{x\to 1}\sin (\ln (x))}. </script> We are only allowed to use this law if
+both limits exist and the denominator does not equal <script type="math/tex">0</script>. The limit in the
+numerator definitely exists, so let’s check the limit in the denominator.
+<script type="math/tex; mode=display"> \begin{align*} 
+   \lim_{x\to 1}\sin(\ln(x)) &= \sin(\lim_{x\to 1}\ln(x))\\
+   &=\sin(\ln(1))\\
+   &= \sin(0)\\
+   &= 0
+                                                                  
+
+                                                                  
+  \end{align*}</script>
+Since the denominator is <script type="math/tex">0</script>, we cannot apply the Quotient Law. </div>
+</div>
+<div role="article" class="problem-environment question" id="problem43"><a id="x1-1009r26"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 0} x\ln x </script>  <div class="multiple-choice" id="problem44"><span class="choice  " id="choice21">yes</span> <span class="choice correct " id="choice22">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback45">If we are trying to use limit laws to compute this limit, we would have to use the
+Product Law to say that <script type="math/tex; mode=display"> \lim _{x\to 0} x\ln x =\lim _{x\to 0} x \cdot \lim _{x\to 0}\ln x. </script> We are only allowed to use this law if both limits exist. We
+know <script type="math/tex">\lim _{x\to 0} x = 0</script>, but what about <script type="math/tex">\lim _{x\to 0}\ln x</script>? We do not know how to find <script type="math/tex">\lim _{x\to 0}\ln x</script> using limit laws because <script type="math/tex">0</script> is
+not in the domain of <script type="math/tex">\ln x</script>. </div>
+</div>
+<div role="article" class="problem-environment question" id="problem46"><a id="x1-1010r27"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 0}\frac {2^x-1}{3^{x-1}} </script>  <div class="multiple-choice" id="problem47"><span class="choice correct " id="choice23">yes</span> <span class="choice  " id="choice24">no</span> </div>
+<div role="article" class="problem-environment question" id="problem48"><a id="x1-1011r28"></a> Compute: <script type="math/tex; mode=display"> \lim _{x\to 0}\frac {2^x-1}{3^{x-1}}\begin {prompt} =\answer {0}\end {prompt} </script> <div class="feedback" data-feedback="attempt" id="feedback49">If we are trying to use limit laws to compute this limit, we would have to use
+the Quotient Law to say that <script type="math/tex; mode=display"> \lim _{x\to 0}\frac {2^x-1}{3^{x-1}} = \frac {\lim _{x\to 0}(2^x-1)}{\lim _{x\to 0}(3^{x-1})}. </script> We are only allowed to use this law if both limits exist
+and the denominator does not equal <script type="math/tex">0</script>. Let’s check each limit separately, starting with
+the denominator <script type="math/tex; mode=display"> \begin{align*} 
+             \lim_{x\to 0}(3^{x-1}) &=3^{\lim_{x\to0}(x-1)}\\
+        &=3^{-1}\\
+        &=\frac{1}{3}
+      \end{align*}</script>
+<!--l. 634--><p class="noindent">On the other hand the limit in the numerator is
+</p><script type="math/tex; mode=display"> \begin{align*} 
+        \lim_{x\to 0}(2^x-1) &=\lim_{x\to0}(2^x)-\lim_{x\to0}(1)\\
+        &=1-1\\
+        &=0
+      \end{align*}</script>
+The limits in both the numerator and denominator exist and the limit in the
+denominator does not equal <script type="math/tex">0</script>, so we can use the Quotient Law. We find: <script type="math/tex; mode=display"> \frac {\lim _{x\to 0}(2^x-1)}{\lim _{x\to 0}(3^{x-1})} =\frac {0}{\frac {1}{3}}=0. </script> </div>
+</div>
+</div>
+<div role="article" class="problem-environment question" id="problem50"><a id="x1-1012r29"></a> Can this limit be directly computed by limit laws? <script type="math/tex; mode=display"> \lim _{x\to 0}(1+x)^{1/x} </script>  <div class="multiple-choice" id="problem51"><span class="choice  " id="choice25">yes</span> <span class="choice correct " id="choice26">no</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback52">We do not have any limit laws for functions of the form <script type="math/tex">f(x)^{g(x)}</script>, so we cannot compute this
+limit. </div>
+</div>
+ 
+ 
+
+                                                                  
+
+
+</body></html>

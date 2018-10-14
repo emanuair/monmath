@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en"><head> <title>What  is  a
+                                                                  
+
+                                                                  
+limit?</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="digInWhatIsALimit.tex"/> 
+<meta name="date" content="2018-10-13 15:22:00"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Consider values of a function at inputs approaching a given point."/> 
+<meta name="learning-outcome" content="Understand the concept of a limit."/> 
+<meta name="learning-outcome" content="Limits as understanding local behavior of functions."/> 
+<meta name="learning-outcome" content="Calculate limits from a graph (or state that the limit does not exist)."/> 
+<meta name="learning-outcome" content="Define a one-sided limit."/> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="4def520f5c2aae68e65db01f6dc5ad469ce89fa7 whatIsALimit/digInWhatIsALimit.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+<div class="abstract">
+<!--l. 15--><p class="noindent">We introduce limits.
+</p></div>   <div class="maketitle"></div>
+<h3 class="sectionHead"><a id="x1-1000"></a>The basic idea</h3>
+<!--l. 21--><p class="noindent">Consider the function <script type="math/tex; mode=display"> f(x) = \frac {\sin (x)}{x}. </script> While <script type="math/tex">f(x)</script> is undefined at <script type="math/tex">x=0</script>, we can still plot <script type="math/tex">f(x)</script> at other values near
+<script type="math/tex">x = 0</script>.
+</p><!--l. 28--><p class="noindent"><img src="digInWhatIsALimit0x.png" alt="PIC" class="graphics"/><!--tex4ht:graphics  
+name="digInWhatIsALimit0x.png" src="digInWhatIsALimit-figure0.pdf"  
+-->
+</p>
+<div role="article" class="problem-environment question" id="problem1"><a id="x1-1001r1"></a> Use the graph of <script type="math/tex">f(x) = \frac {\sin (x)}{x}</script> above to answer the following question: What is <script type="math/tex">f(0)</script>? <div class="multiple-choice" id="problem2"><span class="choice  " id="choice1"><script type="math/tex">0</script></span> <span class="choice  " id="choice2"><script type="math/tex">f(0)</script></span> <span class="choice  " id="choice3"><script type="math/tex">1</script></span> <span class="choice correct " id="choice4"><script type="math/tex">f(0)</script> is
+undefined</span> <span class="choice  " id="choice5">it is impossible to say</span> </div>
+</div>
+<!--l. 67--><p class="noindent">Nevertheless, we can see that as <script type="math/tex">x</script> approaches zero, <script type="math/tex">f(x)</script> approaches one. From this setting
+we come to our definition of a limit.
+</p>
+<div class="theorem-like problem-environment definition" id="problem3"><a id="x1-1002r2"></a>Intuitively,
+<div class="center">
+<!--l. 73--><p class="noindent">
+</p><!--l. 74--><p class="noindent">the <strong>limit</strong> of <script type="math/tex">f(x)</script> as <script type="math/tex">x</script> approaches <script type="math/tex">a</script> is <script type="math/tex">L</script>,</p></div>
+<!--l. 76--><p class="noindent">written <script type="math/tex; mode=display"> \lim _{x\to a} f(x) = L, </script> if the value of <script type="math/tex">f(x)</script> is as close as one wishes to <script type="math/tex">L</script> for all <script type="math/tex">x</script> sufficiently close, but not
+equal to, <script type="math/tex">a</script>.
+</p></div>
+
+<div role="article" class="problem-environment question" id="problem4"><a id="x1-1003r3"></a> Use the graph of <script type="math/tex">f(x) = \frac {\sin (x)}{x}</script> above to finish the following statement: “A good guess is that…” <div class="multiple-choice" id="problem5"><span class="choice correct " id="choice6"><script type="math/tex">\lim _{x\to 0}\frac {\sin (x)}{x} = 1</script>.</span>
+<span class="choice  " id="choice7"><script type="math/tex">\lim _{x\to 1}\frac {\sin (x)}{x} = 0</script>.</span> <span class="choice  " id="choice8"><script type="math/tex">\lim _{x\to 1}f(x) = \frac {\sin (1)}{1}</script>.</span> <span class="choice  " id="choice9"><script type="math/tex">\lim _{x\to 0}f(x) = \frac {\sin (0)}{0}=\infty </script>.</span> </div>
+</div>
+<div role="article" class="problem-environment question" id="problem6"><a id="x1-1004r4"></a> Consider the following graph of <script type="math/tex">y=f(x)</script> <div class="image-environment" role="img" aria-labelledby="image-alt-1">
+                                                                  
+
+                                                                  
+<!--l. 99--><p class="noindent">  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">y</script>
+</p></div>
+Use the graph to evaluate the following. Write DNE if the value does not
+exist.
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem"><script type="math/tex">f(-2) \begin {prompt}=\answer {1}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to -2}f(x)\begin {prompt}=\answer {1}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd class="enumerate-enumitem"><script type="math/tex">f(-1) \begin {prompt}=\answer {2}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to -1}f(x) \begin {prompt}=\answer {2}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (e) </dt><dd class="enumerate-enumitem"><script type="math/tex">f(0) \begin {prompt}=\answer {-2}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+  (f) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 0} f(x) \begin {prompt}=\answer {0}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (g) </dt><dd class="enumerate-enumitem"><script type="math/tex">f(1) \begin {prompt}=\answer {DNE}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (h) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 1} f(x) \begin {prompt}=\answer {-2}\end {prompt}</script></dd></dl>
+</div>
+<h3 class="sectionHead"><a id="x1-2000"></a>Limits might not exist</h3>
+<!--l. 140--><p class="noindent">Limits might not exist. Let’s see how this happens.
+                                                                  
+
+                                                                  
+</p>
+<div class="theorem-like problem-environment example" id="problem7"><a id="x1-2001r5"></a>Consider the graph of <script type="math/tex">f(x) = \lfloor x\rfloor </script>. <div class="image-environment" role="img" aria-labelledby="image-alt-2">  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+Explain why the limit <script type="math/tex; mode=display"> \lim _{x\to 2} f(x) </script> does not exist. <div class="theorem-like problem-environment explanation" id="problem8"><a id="x1-2002r6"></a>The function <script type="math/tex">\lfloor x \rfloor </script> is the function that
+returns the greatest integer less than or equal to <script type="math/tex">x</script>. Recall that <script type="math/tex; mode=display"> \lim _{x\to 2} \lfloor x \rfloor = L </script> if <script type="math/tex">\lfloor x\rfloor </script> can be
+made arbitrarily close to <script type="math/tex">L</script> by making <script type="math/tex">x</script> sufficiently close, but not equal to, <script type="math/tex">2</script>.
+So let’s examine <script type="math/tex">x</script> near, but not equal to, <script type="math/tex">2</script>. Now the question is: What is
+<script type="math/tex">L</script>?
+<!--l. 197--><p class="noindent">If this limit exists, then we should be able to look sufficiently close, but
+not at, <script type="math/tex">x=2</script>, and see that <script type="math/tex">f</script> is approaching some number. Let’s look at a graph:
+</p><div class="image-environment" role="img" aria-labelledby="image-alt-3">     <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">f(x)</script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+If we allow x values on the left of 2 to get closer and closer to 2, we see that <script type="math/tex">f(x) = 1</script>.
+However, if we allow the values of x on the right of 2 to get closer and closer to 2 we
+                                                                  
+
+                                                                  
+see <div class="image-environment" role="img" aria-labelledby="image-alt-4">      <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">f(x)</script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+So just to the right of 2, <script type="math/tex">f(x)=2</script>. We cannot find a single number that <script type="math/tex">f(x)</script> approaches as <script type="math/tex">x</script>
+approaches 2, and so the limit does not exists.
+</div>
+</div>
+<!--l. 261--><p class="noindent">Tables can be used to help guess limits, but one must be careful.
+</p>
+<div role="article" class="problem-environment question" id="problem9"><a id="x1-2003r7"></a> Consider <script type="math/tex">f(x) = \sin \left (\frac {\pi }{x}\right )</script>. Fill in the tables below rounding to three decimal places: <script type="math/tex; mode=display"> \begin {array}{l|l} x & f(x) \\ \hline 0.1 & \begin {prompt}\answer {0}\end {prompt}\\ 0.01 & \begin {prompt}\answer {0}\end {prompt}\\ 0.001 & \begin {prompt}\answer {0}\end {prompt}\\ 0.0001 & \begin {prompt}\answer {0}\end {prompt}\\ \end {array} </script> We may rush
+and say that, based on the table above, <script type="math/tex; mode=display"> \lim _{x\to 0}\sin \left (\frac {\pi }{x}\right )=0. </script> But, recall the definition of the limit: <script type="math/tex">L</script> is the
+limit if the value of <script type="math/tex">f(x)</script> is as close as one wishes to <script type="math/tex">L</script> for <strong>all</strong> <script type="math/tex">x</script> sufficiently close, but not
+equal to, <script type="math/tex">a</script>.
+<!--l. 282--><p class="noindent">From this table we can see that <script type="math/tex">f(x)(=0)</script> is as close as one wishes to <script type="math/tex">L(=0)</script> for <strong>some</strong> values <script type="math/tex">x</script> that
+are sufficiently close to <script type="math/tex">a(=0)</script>. But this does does not satisfy the definition of the limit, at
+least, not yet.
+</p><!--l. 285--><p class="noindent">But, wait! Fill in another table. <script type="math/tex; mode=display"> \begin {array}{l|l} x & f(x) \\ \hline 0.3 & \begin {prompt}\answer {-.866}\end {prompt} \\ 0.03 & \begin {prompt}\answer {-.866}\end {prompt} \\ 0.003 & \begin {prompt}\answer {-.866}\end {prompt} \\ 0.0003 & \begin {prompt}\answer {-.866}\end {prompt} \end {array} </script> What do these two tables tell us about <script type="math/tex; mode=display"> \lim _{x\to 0}\sin \left (\frac {\pi }{x}\right )? </script> </p><div class="multiple-choice" id="problem10"><span class="choice  " id="choice10"><script type="math/tex">\lim _{x\to 0}\sin \left (\frac {\pi }{x}\right ) = 0</script></span> <span class="choice  " id="choice11"><script type="math/tex">\lim _{x\to 0}\sin \left (\frac {\pi }{x}\right )=1</script></span> <span class="choice  " id="choice12"><script type="math/tex">\lim _{x\to 0}\sin \left (\frac {\pi }{x}\right ) = -.866</script></span> <span class="choice  " id="choice13"><script type="math/tex">\lim _{x\to 0}\sin \left (\frac {\pi }{x}\right ) = -.433</script></span> <span class="choice correct " id="choice14">The limit does not exist.</span> </div>
+<div class="feedback" data-feedback="attempt" id="feedback11">The limit does not exist. The first table shows that we can always find a value
+of <script type="math/tex">x</script> as close as we want to <script type="math/tex">0</script> such that <script type="math/tex">f(x)=0</script>. However, the limit is not equal to <script type="math/tex">0</script>,
+since the second table shows that we can also find a value of <script type="math/tex">x</script> as close as we
+want to <script type="math/tex">0</script> such that <script type="math/tex">f(x)=-\frac {\sqrt {3}}{2}</script>. It turns out that for any number <script type="math/tex">y</script>, <script type="math/tex">-1\le y\le 1</script>, we can find a value
+of <script type="math/tex">x</script> as close as we want to <script type="math/tex">0</script> such that <script type="math/tex">f(x)=y</script>. Check the graph of the function <script type="math/tex">f</script>.
+                                                                  
+
+                                                                  
+<div class="image-environment" role="img" aria-labelledby="image-alt-5">  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+We see that <script type="math/tex">f(x)</script> oscillates “wildly” as <script type="math/tex">x</script> approaches <script type="math/tex">0</script>, and hence does not approach any one
+number. </div>
+</div>
+<h3 class="sectionHead"><a id="x1-3000"></a>One-sided limits</h3>
+<!--l. 337--><p class="noindent">While we have seen that <script type="math/tex">\lim _{x\to 2}\lfloor x\rfloor </script> does not exist, its graph looks much “nicer” near <script type="math/tex">a=2</script> than does
+the previous graph near <script type="math/tex">a=0</script>. More can be said about the function <script type="math/tex">\lfloor x\rfloor </script> and its behavior near
+<script type="math/tex">a=2</script>.
+</p>
+<div class="theorem-like problem-environment definition" id="problem12"><a id="x1-3001r8"></a>Intuitively,
+<!--l. 345--><p class="noindent">for the function <script type="math/tex">f</script>, <script type="math/tex">L</script> is the <strong>limit from the right</strong> as <script type="math/tex">x</script> approaches <script type="math/tex">a</script>,
+</p><!--l. 347--><p class="noindent">written <script type="math/tex; mode=display"> \lim _{x\to a^+} f(x) = L, </script> if the value of <script type="math/tex">f(x)</script> is as close as one wishes to <script type="math/tex">L</script> for all <script type="math/tex">x>a</script> sufficiently close to
+<script type="math/tex">a</script>.
+</p><!--l. 354--><p class="noindent">Similarly,
+</p><!--l. 357--><p class="noindent">for the function <script type="math/tex">f</script>, <script type="math/tex">L</script> is the <strong>limit from the left</strong> as <script type="math/tex">x</script> approaches <script type="math/tex">a</script>,
+</p><!--l. 360--><p class="noindent">written <script type="math/tex; mode=display"> \lim _{x\to a^-} f(x) = L, </script> if the value of <script type="math/tex">f(x)</script> is as close as one wishes to <script type="math/tex">L</script> for all <script type="math/tex">x<a</script> sufficiently close to
+<script type="math/tex">a</script>.
+</p><!--l. 367--></div>
+
+                                                                  
+
+                                                                  
+<div class="theorem-like problem-environment example" id="problem13"><a id="x1-3002r9"></a>Compute: <script type="math/tex; mode=display"> \lim _{x\to 2^-} f(x)\qquad \text {and}\qquad \lim _{x\to 2^+} f(x) </script> by using the graph below <div class="image-environment" role="img" aria-labelledby="image-alt-6">  <script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">\pgfmathresult </script><script type="math/tex">y=f(x)=\lfloor x\rfloor </script><script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+<div class="theorem-like problem-environment explanation" id="problem14"><a id="x1-3003r10"></a>From the graph we can see that as <script type="math/tex">x</script> approaches <script type="math/tex">2</script> from the left, <script type="math/tex">\lfloor x\rfloor </script> remains at <script type="math/tex">y=1</script> up until
+the exact point that <script type="math/tex">x=2</script>. Hence <script type="math/tex; mode=display"> \lim _{x\to 2^-} f(x)=1. </script> Also from the graph we can see that as <script type="math/tex">x</script> approaches <script type="math/tex">2</script>
+from the right, <script type="math/tex">\lfloor x\rfloor </script> remains at <script type="math/tex">y=2</script> up to <script type="math/tex">x=2</script>. Hence <script type="math/tex; mode=display"> \lim _{x\to 2^+} f(x)=2. </script>
+</div>
+</div>
+<h3 class="sectionHead"><a id="x1-4000"></a>When you put this all together</h3>
+<!--l. 429--><p class="noindent">One-sided limits help us talk about limits. </p><div class="theorem-like problem-environment theorem" id="problem15"><a id="x1-4001r11"></a> A limit <script type="math/tex; mode=display"> \lim _{x \to a} f(x) </script> exists if and only if
+     <ul class="itemize1">
+     <li class="itemize"><script type="math/tex">\lim _{x \to a^-} f(x)</script> exists
+     </li>
+     <li class="itemize"><script type="math/tex">\lim _{x \to a^+} f(x)</script> exists
+     </li>
+     <li class="itemize"><script type="math/tex">\lim _{x \to a^-} f(x) = \lim _{x \to a^+} f(x)</script></li></ul>
+<!--l. 441--><p class="noindent">In this case, <script type="math/tex">\lim _{x \to a} f(x)</script> is equal to the common value of the two one sided limits.
+</p></div>
+
+<div role="article" class="problem-environment question" id="problem16"><a id="x1-4002r12"></a> Evaluate the expressions by referencing the graph below. Write DNE if the limit
+                                                                  
+
+                                                                  
+does not exist. <div class="image-environment" role="img" aria-labelledby="image-alt-7">    -4-2246-2246810<script type="math/tex">x</script><script type="math/tex">y</script>
+</div>
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 4} f(x) \begin {prompt}=\answer {8}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to -3} f(x)\begin {prompt}=\answer {6}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (c) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 0} f(x) \begin {prompt}=\answer {DNE}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (d) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 0^-} f(x) \begin {prompt}=\answer {-2}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (e) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 0^+} f(x) \begin {prompt}=\answer {-1}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+  (f) </dt><dd class="enumerate-enumitem"><script type="math/tex">f(-2) \begin {prompt}=\answer {8}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (g) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 2^-} f(x) \begin {prompt}=\answer {7}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+ (h) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to -2^-} f(x) \begin {prompt}=\answer {6}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+  (i) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to 1} f(x) \begin {prompt}=\answer {3}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+  (j) </dt><dd class="enumerate-enumitem"><script type="math/tex">f(0) \begin {prompt}=\answer {-3/2}\end {prompt}</script>
+                                                                  
+
+                                                                  
+     </dd><dt class="enumerate-enumitem">
+ (k) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to -3^-} f(x) \begin {prompt}=\answer {6}\end {prompt}</script>
+     </dd><dt class="enumerate-enumitem">
+  (l) </dt><dd class="enumerate-enumitem"><script type="math/tex">\lim _{x\to -2^+} f(x) \begin {prompt}=\answer {2}\end {prompt}</script></dd></dl>
+</div>
+ 
+ 
+
+                                                                  
+
+
+</body></html>
