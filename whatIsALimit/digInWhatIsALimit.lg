@@ -3,14 +3,13 @@ htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmtt font-family: monospace;
 File: digInWhatIsALimit.html
 File: digInWhatIsALimit.tmp
-File: digInWhatIsALimit.tmp
 Font_Css("4"): .small-caps{font-variant: small-caps; }
 Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
 Font_Css("12"): .htf-calligraphy {font-family:cursive}
 Font_Css("14"): .htf-italic {font-style: italic;}
 Font_Css("16"): .htf-bold {font-weight: bold;}
 Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
---- needs --- digInWhatIsALimit.idv[2] ==> digInWhatIsALimit0x.png ---
+File: 6.png
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmtt","10","10","100")
