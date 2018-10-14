@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en"><head> <title>Calculus
+                                 
+ 1</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="calculus1.tex"/> 
+<meta name="date" content="2018-10-13 23:41:00"/> 
+<meta name="og:image" content=""/> 
+<meta name="description" content="xourse"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://ximera.osu.edu/public/stylesheets/standalone.css" rel="stylesheet" media="screen"/> 
+<script type="text/javascript" async="" src="https://ximera.osu.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="dependency" content="e7a6959cf642e4159ee5eb36389e75b35d9c5360 preamble.tex"/><meta name="dependency" content="3d737ab630a8e5e6a4e9ddea5892abe33d3c51e1 ximeraTutorial/titlePage.tex"/><meta name="dependency" content="d12ecc22f5ee21df3a73119c9c78853efba9d661 ximeraTutorial/howToUseXimera.tex"/><meta name="dependency" content="53618fcc8b8fce8c5f0157ccb83a0432f2c8f23c ximeraTutorial/howIsMyWorkScored.tex"/><meta name="dependency" content="35cecfac9d40209b7b908790a388132586dd17ff whatIsALimit/titlePage.tex"/><meta name="dependency" content="b7bb2d3fa784538338e0bdb779ae426691f28281 whatIsALimit/breakGround.tex"/><meta name="dependency" content="6cb151bb095527f30507da2e40481ebdd0190a5c whatIsALimit/digInWhatIsALimit.tex"/><meta name="dependency" content="193c2af60b7fb144b22c9928d13dc46895acccf9 whatIsALimit/digInContinuity.tex"/><meta name="dependency" content="b0406e638164b2e0a4a23a480405416842aefb0f limitLaws/titlePage.tex"/><meta name="dependency" content="c7138c979d3514c013a6394c485181a92d3fccad limitLaws/breakGround.tex"/><meta name="dependency" content="d734c537d624935121e703512b39e9c7badc9b8b limitLaws/digInLimitLaws.tex"/><meta name="dependency" content="c4985ca02be754c2633fcda48a25d0ecc86c8466 limitLaws/digInTheSqueezeTheorem.tex"/><meta name="dependency" content="f59d26686c0e3b7693993d3c915ea63fc0a4dcb0 indeterminateForms/titlePage.tex"/><meta name="dependency" content="a4dda19c54517448472e59667e9365cf1ecfa0f3 indeterminateForms/breakGround.tex"/><meta name="dependency" content="afb88042c7c96307b3d77d3d3eb95fa196c16476 indeterminateForms/digInLimitsOfTheFormZeroOverZero.tex"/><meta name="dependency" content="0801f22efc09e33fd0dc975c860e3971ca2d4363 indeterminateForms/digInLimitsOfTheFormNonZeroOverZero.tex"/><meta name="dependency" content="0bc4345074689a4f4ec6669db79e79ae14c7d806 calculus1.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\graded }[1]{}
+\newcommand {\todo }[0]{}
+\newcommand {\oiint }[0]{{\large \bigcirc }\kern -1.56em\iint }
+\newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\npnoround }[0]{\nprounddigits {-1}}
+\newcommand {\npnoroundexp }[0]{\nproundexpdigits {-1}}
+\newcommand {\npunitcommand }[1]{\ensuremath {\mathrm {#1}}}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\R }[0]{\mathbb R}
+\newcommand {\N }[0]{\mathbb N}
+\newcommand {\Z }[0]{\mathbb Z}
+\newcommand {\sagemath }[0]{\textsf {SageMath}}
+\newcommand {\d }[0]{\mathop {}\!d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{\d x}}
+\newcommand {\zeroOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {0}{0}}}}
+\newcommand {\inftyOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {\infty }{\infty }}}}
+\newcommand {\zeroOverInfty }[0]{\ensuremath {\boldsymbol {\tfrac {0}{\infty }}}}
+\newcommand {\zeroTimesInfty }[0]{\ensuremath {\small \boldsymbol {0\cdot \infty }}}
+\newcommand {\inftyMinusInfty }[0]{\ensuremath {\small \boldsymbol {\infty -\infty }}}
+\newcommand {\oneToInfty }[0]{\ensuremath {\boldsymbol {1^\infty }}}
+\newcommand {\zeroToZero }[0]{\ensuremath {\boldsymbol {0^0}}}
+\newcommand {\inftyToZero }[0]{\ensuremath {\boldsymbol {\infty ^0}}}
+\newcommand {\numOverZero }[0]{\ensuremath {\boldsymbol {\tfrac {\#}{0}}}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\unit }[0]{\mathop {}\!\mathrm }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\seq }[1]{\left ( #1 \right )}
+\newcommand {\epsilon }[0]{\varepsilon }
+\newcommand {\phi }[0]{\varphi }
+\newcommand {\iff }[0]{\Leftrightarrow }
+\DeclareMathOperator {\arccot }{arccot}
+\DeclareMathOperator {\arcsec }{arcsec}
+\DeclareMathOperator {\arccsc }{arccsc}
+\DeclareMathOperator {\si }{Si}
+\DeclareMathOperator {\scal }{scal}
+\DeclareMathOperator {\sign }{sign}
+\newcommand {\arrowvec }[1]{{\overset {\rightharpoonup }{#1}}}
+\newcommand {\vec }[1]{{\overset {\boldsymbol {\rightharpoonup }}{\mathbf {#1}}}}
+\DeclareMathOperator {\proj }{\mathbf {proj}}
+\newcommand {\veci }[0]{{\boldsymbol {\hat {\imath }}}}
+\newcommand {\vecj }[0]{{\boldsymbol {\hat {\jmath }}}}
+\newcommand {\veck }[0]{{\boldsymbol {\hat {k}}}}
+\newcommand {\vecl }[0]{\vec {\boldsymbol {\l }}}
+\newcommand {\uvec }[1]{\mathbf {\hat {#1}}}
+\newcommand {\utan }[0]{\mathbf {\hat {t}}}
+\newcommand {\unormal }[0]{\mathbf {\hat {n}}}
+\newcommand {\ubinormal }[0]{\mathbf {\hat {b}}}
+\newcommand {\dotp }[0]{\bullet }
+\newcommand {\cross }[0]{\boldsymbol \times }
+\newcommand {\grad }[0]{\boldsymbol \nabla }
+\newcommand {\divergence }[0]{\grad \dotp }
+\newcommand {\curl }[0]{\grad \cross }
+\newcommand {\lto }[0]{\mathop {\longrightarrow \,}\limits }
+\newcommand {\bar }[0]{\overline }
+\newcommand {\surfaceColor }[0]{violet}
+\newcommand {\surfaceColorTwo }[0]{redyellow}
+\newcommand {\sliceColor }[0]{greenyellow}
+\newcommand {\vector }[1]{\left \langle #1\right \rangle }
+\newcommand {\sectionOutcomes }[0]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }                         </script><script type="text/javascript"> 
+</script> 
+</div>
+
+                                                                  
+ <div class="maketitle"></div>
+<a class="activity card " href="ximeraTutorial/titlePage" data-options="">ximeraTutorial/titlePage.tex<h2>Ximera
+                                                                  
+
+                                                                  
+tutorial</h2><h3>
+</h3></a> <a class="activity card " href="ximeraTutorial/howToUseXimera" data-options="">ximeraTutorial/howToUseXimera.tex<h2>How to use Ximera</h2><h3>This course is built in Ximera.
+</h3></a> <a class="activity card " href="ximeraTutorial/howIsMyWorkScored" data-options="">ximeraTutorial/howIsMyWorkScored.tex<h2>How is my work scored?</h2><h3>We explain how your work is scored.
+</h3></a> 
+<a class="activity card chapter" href="whatIsALimit/titlePage" data-options="">whatIsALimit/titlePage.tex<h2>What  is  a
+                                                                  
+
+                                                                  
+limit?</h2><h3>
+</h3></a> <a class="activity card section" href="whatIsALimit/breakGround" data-options="">whatIsALimit/breakGround.tex<h2>Stars  and
+                                                                  
+
+                                                                  
+functions</h2><h3>Two young mathematicians discuss stars and functions.
+</h3></a> <a class="activity card section" href="whatIsALimit/digInWhatIsALimit" data-options="">whatIsALimit/digInWhatIsALimit.tex<h2>What  is  a
+                                                                  
+
+                                                                  
+limit?</h2><h3>We introduce limits.
+</h3></a> <a class="activity card section" href="whatIsALimit/digInContinuity" data-options="">whatIsALimit/digInContinuity.tex<h2>Continuity</h2><h3>The limit of a continuous function at a point is equal to the value of the function at
+that point.
+</h3></a>
+<a class="activity card chapter" href="limitLaws/titlePage" data-options="">limitLaws/titlePage.tex<h2>Limit
+                                                                  
+
+                                                                  
+laws</h2><h3>
+</h3></a> <a class="activity card section" href="limitLaws/breakGround" data-options="">limitLaws/breakGround.tex<h2>Equal  or
+                                                                  
+
+                                                                  
+not?</h2><h3>Here we see a dialogue where students discuss combining limits with arithmetic.
+</h3></a> <a class="activity card section" href="limitLaws/digInLimitLaws" data-options="">limitLaws/digInLimitLaws.tex<h2>The  limit
+                                                                  
+
+                                                                  
+laws</h2><h3>We give basic laws for working with limits.
+</h3></a> <a class="activity card section" href="limitLaws/digInTheSqueezeTheorem" data-options="">limitLaws/digInTheSqueezeTheorem.tex<h2>The  Squeeze
+                                                                  
+
+                                                                  
+Theorem</h2><h3>The Squeeze theorem allows us to compute the limit of a difficult function by
+“squeezing” it between two easy functions.
+</h3></a>
+<a class="activity card chapter" href="indeterminateForms/titlePage" data-options="">indeterminateForms/titlePage.tex<h2>(In)determinate
+                                                                  
+
+                                                                  
+forms</h2><h3>
+</h3></a> <a class="activity card section" href="indeterminateForms/breakGround" data-options="">indeterminateForms/breakGround.tex<h2>Could  it  be
+                                                                  
+
+                                                                  
+anything?</h2><h3>Two young mathematicians investigate the arithmetic of large and small
+numbers.
+</h3></a> <a class="activity card section" href="indeterminateForms/digInLimitsOfTheFormZeroOverZero" data-options="">indeterminateForms/digInLimitsOfTheFormZeroOverZero.tex<h2>Limits  of  the  form  zero  over
+                                                                  
+
+                                                                  
+zero</h2><h3>We want to evaluate limits for which the Limit Laws do not apply.
+</h3></a> <a class="activity card section" href="indeterminateForms/digInLimitsOfTheFormNonZeroOverZero" data-options="">indeterminateForms/digInLimitsOfTheFormNonZeroOverZero.tex<h2>Limits  of  the  form  nonzero  over
+                                                                  
+
+                                                                  
+zero</h2><h3>What can be said about limits that have the form nonzero over zero?
+</h3></a>
+ 
+ 
+
+                                 
+                                                                  
+
+
+</body></html>
